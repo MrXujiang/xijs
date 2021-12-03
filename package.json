@@ -1,0 +1,54 @@
+{
+  "name": "xijs",
+  "version": "1.0.4",
+  "description": "A business - oriented scene Js Library",
+  "author": "xuxiaoxi",
+  "keywords": [
+    "javascript tool",
+    "js tool",
+    "js lib",
+    "Js Library",
+    "lodash",
+    "lowcode tool"
+  ],
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish --access public",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.12.0 || ^17.0.0"
+  },
+  "devDependencies": {
+    "@umijs/test": "^3.0.5",
+    "dumi": "^1.0.17",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "yorkie": "^2.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com"
+  }
+}
