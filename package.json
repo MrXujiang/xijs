@@ -1,6 +1,6 @@
 {
   "name": "xijs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A business - oriented scene Js Library",
   "author": "xuxiaoxi",
   "keywords": [
@@ -37,9 +37,12 @@
     ]
   },
   "dependencies": {
+    "nanoid": "^3.1.30",
+    "qs": "^6.10.1",
     "react": "^16.12.0 || ^17.0.0"
   },
   "devDependencies": {
+    "@types/qs": "^6.9.7",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.0.17",
     "father-build": "^1.17.2",

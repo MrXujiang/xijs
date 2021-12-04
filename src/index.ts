@@ -1,2 +1,10 @@
 export { default as parser } from './parser';
 export { default as store } from './store';
+export { default as uuid } from './uuid';
+export { default as obj2url } from './obj2url';
+export { default as isPc } from './isPc';
+export { default as formatDate } from './formatDate';
+export { default as url2obj } from './url2obj';
+export { default as throttle } from './throttle';
+export { default as debounce } from './debounce';
+export { default as randomStr } from './randomStr';
