@@ -15,7 +15,7 @@
 
 ## API Doc
 
-[xijs](h5.dooring.cn/xijs)
+[xijs](http://h5.dooring.cn/xijs)
 
 ## parser
 
