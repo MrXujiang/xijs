@@ -1,3 +1,5 @@
+![](http://cdn.dooring.cn/dr/xijs.png)
+
 # xijs
 
 一款面向复杂业务场景的 js 类库, 目前已支持:
@@ -13,9 +15,11 @@
 - randomStr 生成指定个数随机字符串的函数
 - uuid 生成唯一 id
 
+等等开发中常用的工具函数, 轻松提高业务研发效率.
+
 ## API Doc
 
-[xijs](http://h5.dooring.cn/xijs)
+[xijs 文档](http://h5.dooring.cn/xijs)
 
 ## parser
 
@@ -81,6 +85,10 @@ console.log('native stringify', parser.nativeStringify(door));
 开源不易, 有了您的赞助, 我们会做的更好~
 
 <img src="http://cdn.dooring.cn/dr/WechatIMG2.jpeg" width="180px" />
+
+## 共建 | Contribute
+
+欢迎参与到项目的共建中, 您可以提 issue 或者 pr 来共建项目, 或者加作者微信, 一起让项目更健壮.
 
 ## 技术反馈和交流群 | Technical feedback and communication
 
