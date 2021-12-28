@@ -67,7 +67,7 @@ const store = {
         value = value.slice(index + timeSignLen);
       } else {
         (value = null), (status = that.status.TIMEOUT);
-        that.remove(_key);
+        that.remove(key);
       }
     } else {
       status = that.status.FAILURE;
@@ -94,7 +94,7 @@ const store = {
     }
     if (value) {
       try {
-        this.storage.removeItem(key);
+        this.storage.removeItem(_key);
         status = this.status.SUCCESS;
       } catch (e) {
         // dosomething
