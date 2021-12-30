@@ -20,3 +20,6 @@ export { default as hyphenate } from './hyphenate';
 export { default as getRawType } from './getRawType';
 export { default as getRuntimeEnv } from './getRuntimeEnv';
 export { default as repeat } from './repeat';
+export { default as transformTree } from './transformTree';
+export { default as random } from './random';
+export { default as cloneDeep } from './cloneDeep';

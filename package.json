@@ -1,6 +1,6 @@
 {
   "name": "xijs",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "A business - oriented scene Js Library",
   "author": "xuxiaoxi",
   "keywords": [
@@ -37,6 +37,8 @@
     ]
   },
   "dependencies": {
+    "@types/lodash.clonedeep": "^4.5.6",
+    "lodash.clonedeep": "^4.5.0",
     "nanoid": "^3.1.30",
     "qs": "^6.10.1",
     "react": "^16.12.0 || ^17.0.0"
