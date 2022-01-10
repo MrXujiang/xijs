@@ -99,6 +99,7 @@ const parser = {
       return JSON.stringify(_obj, replacer, space);
     } catch (err) {
       error && error(err);
+      return '';
     }
   },
   fastStringify: function (
@@ -124,6 +125,7 @@ const parser = {
       );
     } catch (err) {
       error && error(err);
+      return '';
     }
   },
   nativeStringify: JSON.stringify,
