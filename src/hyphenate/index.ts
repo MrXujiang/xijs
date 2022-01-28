@@ -3,8 +3,8 @@
  * @param str
  * @returns
  */
-function hyphenate(str: string) {
+function hyphenate(str: string, flag = '-') {
   const hyphenateRE = /\B([A-Z])/g;
-  return str.replace(hyphenateRE, '-$1').toLowerCase();
+  return str.replace(hyphenateRE, `${flag}$1`).toLowerCase();
 }
 export default hyphenate;

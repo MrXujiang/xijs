@@ -1,6 +1,6 @@
 {
   "name": "xijs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A business - oriented scene Js Library",
   "author": "xuxiaoxi",
   "keywords": [
@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && dumi dev",
-    "docs:build": "export NODE_OPTIONS=--openssl-legacy-provider && dumi build",
+    "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && father-build",
     "deploy": "npm run docs:build && npm run docs:deploy",

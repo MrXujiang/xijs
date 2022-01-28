@@ -17,5 +17,5 @@ Demo:
 ```tsx | pure
 import { average } from 'xijs';
 
-average([1, 2, 3, 4, 5]); // -> 7.5
+average([1, 2, 3, 4, 5]); // -> 3
 ```

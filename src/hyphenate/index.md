@@ -16,7 +16,11 @@ Demo:
 
 ```tsx | pure
 import { hyphenate } from 'xijs';
+// 默认用分号分隔
+const name = hyphenate('EaCdEf');
+console.log(name); // EaCdEf ==> ea-cd-ef
 
-const name = hyphenate('abCdEf');
-console.log(name); // abCdEf ==> ab-cd-ef
+// 自定义分隔符
+const name1 = hyphenate('EaCdEf', '_');
+console.log(name1); // EaCdEf ==> ea_cd_ef
 ```

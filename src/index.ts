@@ -24,3 +24,4 @@ export { default as transformTree } from './transformTree';
 export { default as random } from './random';
 export { default as cloneDeep } from './cloneDeep';
 export { default as base64 } from './base64';
+export { default as hyCompact } from './hyCompact';

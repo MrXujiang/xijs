@@ -17,3 +17,35 @@ features:
     desc: 基于复杂场景的深度封装
 footer: Open-source MIT Licensed | Copyright © 2020<br />友情链接 [H5-Dooring | H5制作平台](http://h5.dooring.cn)  ---  [DooringX | 可视化搭建框架](http://x.dooring.cn)
 ---
+
+### 安装 & 使用
+
+1. 通过 npm /yarn
+
+```bash
+# yarn add xijs
+npm install xijs
+```
+
+2. 通过 cdn 引入
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/xijs@1.1.1/dist/xijs.min.js"></script>
+```
+
+### 贡献者
+
+<table style="width:360px">
+  <tr>
+    <td width="80" align="center">
+      <a target="_blank" href="https://github.com/MrXujiang">
+        <img src="https://avatars.githubusercontent.com/u/28833634?v=4" width="80" style="border-radius:6px" />
+      </a>
+    </td>
+    <td width="80" align="center">
+      <a target="_blank" href="http://cdn.dooring.cn/dr/lowcode.jpeg">
+        <strong>期待加入</strong>
+      </a>
+    </td>
+  </tr>
+</table>
