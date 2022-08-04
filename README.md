@@ -16,6 +16,9 @@
 - throttle 节流函数
 - randomStr 生成指定个数随机字符串的函数
 - uuid 生成唯一 id
+- shuffle 数组乱序, 洗牌算法
+- randomStr 生成随机字符串
+- transformTree 将扁平数组转换成树结构
 
 等等开发中常用的工具函数, 轻松提高业务研发效率.
 
