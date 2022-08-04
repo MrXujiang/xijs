@@ -8,7 +8,7 @@ group:
   order: 6
 ---
 
-## obj2url
+## isPc
 
 Demo:
 
