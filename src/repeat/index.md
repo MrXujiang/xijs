@@ -4,7 +4,8 @@ nav:
   title: 使用文档
   path: /lib
 group:
-  path: /
+  path: /string
+  title: 字符串操作
   order: 12
 ---
 

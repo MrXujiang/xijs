@@ -4,7 +4,8 @@ nav:
   title: 使用文档
   path: /lib
 group:
-  path: /
+  path: /judge
+  title: 常用判断函数
   order: 12
 ---
 

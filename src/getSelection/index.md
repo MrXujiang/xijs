@@ -4,7 +4,8 @@ nav:
   title: 使用文档
   path: /lib
 group:
-  path: /
+  path: /browser
+  title: 浏览器相关
   order: 12
 ---
 

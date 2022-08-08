@@ -4,7 +4,8 @@ nav:
   title: 使用文档
   path: /lib
 group:
-  path: /
+  path: /math
+  title: 数学计算
   order: 12
 ---
 

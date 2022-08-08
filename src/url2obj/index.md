@@ -4,7 +4,8 @@ nav:
   title: 使用文档
   path: /lib
 group:
-  path: /
+  path: /format
+  title: 数据结构相关
   order: 8
 ---
 

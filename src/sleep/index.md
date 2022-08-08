@@ -4,8 +4,9 @@ nav:
   title: 使用文档
   path: /lib
 group:
-  path: /
-  order: 12
+  path: /highFn
+  title: js高级函数
+  order: 10
 ---
 
 ## sleep
