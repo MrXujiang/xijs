@@ -4,4 +4,5 @@ export default {
   umd: {
     file: 'xijs',
   },
+  runtimeHelpers: true,
 };
