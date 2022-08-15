@@ -75,6 +75,24 @@ console.log(parser.parse(parser.stringify(door)));
 console.log('native stringify', parser.nativeStringify(door));
 ```
 
+### 注意⚠️
+对于出现`regeneratorRuntime is not defined问题的解决`, 我们可以在webpack做如下配置, 来支持es的async / await :
+```bash
+npm install --save-dev @babel/plugin-transform-runtime
+```
+
+配置:
+
+```js
+ use: {
+     loader: 'babel-loader',
+     options: {
+         plugins: ["@babel/plugin-transform-runtime"]
+     }
+ }
+
+```
+
 ## 更多推荐
 
 | name                                                                              | Description                                                                             |
