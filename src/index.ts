@@ -30,3 +30,5 @@ export { default as isArray } from './isArray';
 export { default as file2img } from './file2img';
 export { default as rgba2obj } from './rgba2obj';
 export { default as hex2rgba } from './hex2rgba';
+export { default as formatNumber } from './formatNumber';
+export { default as formatPercent } from './formatPercent';
