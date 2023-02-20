@@ -3,12 +3,12 @@
  * @param str
  * @returns
  */
-function hyCompact(str: string, flag = '-') {
+function hyCompact(str: string, flag: string = '-') {
   let temp = str.replace(/[A-Z]{1,2}/g, function (match) {
     return flag + match.toLowerCase();
   });
   if (temp.slice(0, 1) === flag) {
-    //如果首字母是大写，执行replace时会多一个_，这里需要去掉
+    //如果首字母是大写，执行replace时会多一个-，这里需要去掉
     temp = temp.slice(1);
   }
   return temp;

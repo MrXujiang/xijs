@@ -17,7 +17,7 @@ const store = {
   set: function (
     key: string,
     value: string | number,
-    time?: Date & number,
+    time?: Date | number,
     cb?: (status: number, key: string, value: string | number) => void,
   ) {
     let _status = this.status.SUCCESS,
@@ -26,7 +26,7 @@ const store = {
     // 设置失效时间，未设置时间默认为一个月
     try {
       _time = time
-        ? new Date(time).getTime() || time.getTime()
+        ? new Date(time).getTime() || (time as Date).getTime()
         : new Date().getTime() + 1000 * 60 * 60 * 24 * 31;
     } catch (e) {
       _time = new Date().getTime() + 1000 * 60 * 60 * 24 * 31;
