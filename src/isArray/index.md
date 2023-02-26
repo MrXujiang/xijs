@@ -18,5 +18,5 @@ Demo:
 ```tsx | pure
 import { isArray } from 'xijs';
 
-isEmpty([]); // -> true
+isArray([]); // -> true
 ```
