@@ -11,10 +11,12 @@ describe('数学计算相关测试', () => {
       expect(average(item)).toBe(avg);
     });
   });
+
   test('创建一个排除指定项的数组', () => {
     const omitArr = difference([1, 2, 2, 3, 3, 4, 5], [2, 3]);
     expect(omitArr).toEqual([1, 4, 5]);
   });
+
   test('返回指定范围的随机数', () => {
     const min = 2,
       max = 5;
@@ -22,8 +24,10 @@ describe('数学计算相关测试', () => {
     expect(r).toBeGreaterThanOrEqual(min);
     expect(r).toBeLessThanOrEqual(max);
   });
+
   test('打乱数组', () => {
     const arr = [1, 3, 5, 7, 4, 3];
-    expect(shuffle(arr.slice())).not.toEqual(arr);
+    const shuffleArr = shuffle(arr.slice());
+    expect(shuffleArr).not.toEqual(arr);
   });
 });

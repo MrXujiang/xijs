@@ -16,7 +16,7 @@ Demo:
 ```tsx | pure
 import { compressImg } from 'xijs';
 
-// 将file文件转换为图片对象以获取图片信息
+// 压缩图片
 const newImg = compressImg(img, 'image/png', 500, 300, 0.8).then((blob) =>
   console.log(blob),
 );
