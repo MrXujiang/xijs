@@ -17,7 +17,7 @@ Demo:
 
 ```tsx | pure
 import { hyCompact } from 'xijs';
-// 默认用分号分隔
+// 默认用横线分隔
 const name = hyCompact('EACdEf');
 console.log(name); // EACdEf ==> ea-cd-ef
 

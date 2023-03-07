@@ -11,12 +11,12 @@ group:
 
 ## formatPercent
 
-> 数值千分位格式化
+> 值转换为百分数表示
 
 Demo:
 
 ```tsx | pure
 import { formatPercent } from 'xijs';
-const num = formatPercent(10.234, 2);
-console.log(num); // -> 10.23%
+const num = formatPercent(0.1234, 2);
+console.log(num); // -> 12.34%
 ```

@@ -50,26 +50,42 @@ parser.stringify(door);
 
 // 结果如下:
 // {
-//	"a": 1,
-//	"b": "__xfunc__function b() {}",
-//	"c": {
-//		"c1": "h5-dooring",
-//		"c2": "__xfunc__function c2() {}"
-//	}
-// }
+//   a: 1,
+//   b: '__xfunc__function () {}',
+//   c: {
+//     c1: 'h5-dooring',
+//     c2: '__xfunc__() => {}',
+//     c3: {
+//        c: '3fvc',
+//        d: {
+//          dd: '__xfunc__() => {}',
+//          ee: '__xreg__/[a-z]/g'
+//        }
+//     },
+//   },
+//   d: '__xreg__/[0-9]/g',
+// };
 
 // 将json数据反解析成对象
 parser.parse(parser.stringify(door));
 
 // 结果如下:
 // {
-//	a: 1,
-//	b: function b() {},
-//	c: {
-//		c1: "h5-dooring",
-//		c2: function c2() {}
-//	}
-// }
+//   a: 1,
+//   b: function () {},
+//   c: {
+//     c1: 'h5-dooring',
+//     c2: () => {},
+//     c3: {
+//       c: '3fvc',
+//       d: {
+//         dd: () => {},
+//         ee: /[a-z]/g,
+//       },
+//     },
+//   },
+//   d: /[0-9]/g,
+// };
 
 // 使用原生json api
 parser.nativeStringify(door);
