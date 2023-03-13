@@ -1,4 +1,4 @@
-import { isArray } from '../index';
+import isArray  from '../isArray';
 /**
  * 
  * @param obj 
@@ -8,9 +8,9 @@ import { isArray } from '../index';
  * 对象数组使用  bubbleSort(arr,key,orderby)
  * 普通数组使用  bubbleSort(arr) bubbleSort(arr,'',orderby)
  */
-function bubbleSort(obj: any, arrKey: string, orderby: string) {
-    var result = obj;
-    var temp = null;
+function bubbleSort(obj: (object | string | number) [], arrKey: string, orderby: 'asc' | 'desc' = 'asc') {
+    let result : any[] = obj;
+    let temp = null;
     if (isArray(obj)) {
         if (obj.length > 1) {
             for (var i = 0; i < result.length; i++) {
@@ -22,7 +22,7 @@ function bubbleSort(obj: any, arrKey: string, orderby: string) {
                             ? result[j][arrKey]
                             : result[j];
                     // 降序
-                    if (orderby === 'fall') {
+                    if (orderby === 'desc') {
                         if (parseInt(resultfiled_i) > parseInt(resultfiled_j)) {
                             temp = result[j];
                             result[j] = result[i];

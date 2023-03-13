@@ -14,6 +14,6 @@ describe('排序相关测试', () => {
     // 升序
     console.log(bubbleSort(objArr,'age'));
     // 降序
-    console.log(bubbleSort(objArr,'age','fall'));
+    console.log(bubbleSort(objArr,'age','desc'));
   });
 });
