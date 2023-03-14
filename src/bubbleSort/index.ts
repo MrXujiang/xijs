@@ -13,9 +13,9 @@ function bubbleSort(obj: (object | string | number) [], arrKey: string, orderby:
     let temp = null;
     if (isArray(obj)) {
         if (obj.length > 1) {
-            for (var i = 0; i < result.length; i++) {
-                for (var j = 0; j < i; j++) {
-                    var resultfiled_i = result[i][arrKey]
+            for (let i = 0; i < result.length; i++) {
+                for (let j = 0; j < i; j++) {
+                    let resultfiled_i = result[i][arrKey]
                         ? result[i][arrKey]
                         : result[i],
                         resultfiled_j = result[j][arrKey]

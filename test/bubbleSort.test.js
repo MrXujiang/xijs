@@ -1,4 +1,4 @@
-import { bubbleSort } from '../src/index';
+import { bubbleSort,quickSort } from '../src/index';
 
 describe('排序相关测试', () => {
   test('冒泡排序', () => {
@@ -9,11 +9,16 @@ describe('排序相关测试', () => {
       { name: '5', age: 15 },
       { name: '2', age: 12 },
     ];
-
+    let str = '1,2,3,4'
     console.log(bubbleSort(arr));
     // 升序
     console.log(bubbleSort(objArr,'age'));
     // 降序
     console.log(bubbleSort(objArr,'age','desc'));
+    
+    console.log(quickSort(arr))
+    console.log(quickSort(objArr,'age'))
+    console.log(quickSort(objArr,'age','desc'))
+    // console.log(quickSort(str,'age','desc'))
   });
 });

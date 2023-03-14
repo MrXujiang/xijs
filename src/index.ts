@@ -34,3 +34,4 @@ export { default as formatNumber } from './formatNumber';
 export { default as formatPercent } from './formatPercent';
 export { default as difference } from './difference';
 export { default as bubbleSort } from './bubbleSort';
+export { default as quickSort } from './quickSort';
