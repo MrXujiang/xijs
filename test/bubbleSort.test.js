@@ -9,7 +9,6 @@ describe('排序相关测试', () => {
       { name: '5', age: 15 },
       { name: '2', age: 12 },
     ];
-    let str = '1,2,3,4'
     console.log(bubbleSort(arr));
     // 升序
     console.log(bubbleSort(objArr,'age'));
