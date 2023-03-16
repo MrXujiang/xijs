@@ -1,4 +1,11 @@
 import isArray from '../isArray';
+/**
+ * 对象数组、普通数组快速排序
+ * @param arr 
+ * @param arrKey 
+ * @param orderby 
+ * @returns 
+ */
 function quickSort(arr: (object | string | number) [],arrKey:string,orderby: 'asc' | 'desc' = 'asc') {
     if (isArray(arr)) {
         let newArr : any[] = [],

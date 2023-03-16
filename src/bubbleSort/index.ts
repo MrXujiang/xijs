@@ -1,9 +1,9 @@
 import isArray  from '../isArray';
 /**
- * 
+ * 对象数组、普通数组冒泡排序
  * @param obj 
  * @param arrKey 
- * @param orderby  fall => 降序 反之 升序，默认升序
+ * @param orderby
  * @returns 
  * 对象数组使用  bubbleSort(arr,key,orderby)
  * 普通数组使用  bubbleSort(arr) bubbleSort(arr,'',orderby)
