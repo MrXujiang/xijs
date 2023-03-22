@@ -1,30 +1,34 @@
 import isArray from '../isArray';
 /**
  * 对象数组、普通数组快速排序
- * @param arr 
- * @param arrKey 
- * @param orderby 
- * @returns 
+ * @param arr
+ * @param arrKey
+ * @returns
  */
-function quickSort(arr: (object | string | number) [],arrKey:string,orderby: 'asc' | 'desc' = 'asc') {
+function quickSort(arr: (object | string | number) [],key?:string): (object | string | number)[] {
     if (isArray(arr)) {
-        let newArr : any[] = [],
-            result : any[] = arr,
-            temp = [],
-            i = 0,
-            len = result.length;
-        if (len && len > 1) {
-            for (; i < len; i++) {
-                let item = result[i];
-                ((newArr[i] = new String(item && item[arrKey] || '')) as any)._obj  = item;
+        let result : any[] = arr;
+        if (result.length <= 1) {
+        return result;
+        }
+        const pivotIndex = Math.floor(result.length / 2);
+        const pivot = result[pivotIndex];
+        const left = [];
+        const right = [];
+    
+        for (let i = 0; i < result.length; i++) {
+            if (i === pivotIndex) {
+                continue;
+            }
+        
+            if ( (key ? result[i][key] : result[i] )<= (key ? pivot[key] : pivot)) {
+                left.push(result[i]);
+            } else {
+                right.push(result[i]);
             }
         }
-        newArr.sort();
-        for (i = 0; i < len; i++) {
-            temp[i] = newArr[i]._obj;
-        }
-        if (orderby == 'desc') temp.reverse();
-        return temp;
-    } else throw Error('数据格式错误');
-}
-export default quickSort
+        let resultArr = [...quickSort(left,key), pivot, ...quickSort(right,key)]
+        return resultArr;
+    }else throw Error('数据格式错误')
+  }
+export default quickSort;

@@ -28,10 +28,8 @@ describe('排序相关测试', () => {
     expect(bubbleSort(objArr, 'age')).toStrictEqual(objArrAsc);
     expect(bubbleSort(objArr, 'age', 'desc')).toStrictEqual(objArrDesc);
   });
-  test('冒泡排序', () => {
+  test('快速排序', () => {
     expect(quickSort(arr)).toStrictEqual(arrAsc);
-    expect(quickSort(arr,'','desc')).toStrictEqual(arrDesc);
-    expect(quickSort(objArr, 'age')).toStrictEqual(objArrAsc);
-    expect(quickSort(objArr, 'age', 'desc')).toStrictEqual(objArrDesc);
+    expect(quickSort(objArr,'age')).toStrictEqual(objArrAsc);
   });
 });
