@@ -33,3 +33,6 @@ export { default as hex2rgba } from './hex2rgba';
 export { default as formatNumber } from './formatNumber';
 export { default as formatPercent } from './formatPercent';
 export { default as difference } from './difference';
+export { default as coordinatesInCircle } from './coordinatesInCircle';
+export { default as coordinatesInRect } from './coordinatesInRect';
+export { default as judgePointInCircle } from './judgePointInCircle';
