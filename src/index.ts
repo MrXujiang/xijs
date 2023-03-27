@@ -36,3 +36,5 @@ export { default as difference } from './difference';
 export { default as coordinatesInCircle } from './coordinatesInCircle';
 export { default as coordinatesInRect } from './coordinatesInRect';
 export { default as judgePointInCircle } from './judgePointInCircle';
+export { default as bubbleSort } from './bubbleSort';
+export { default as quickSort } from './quickSort';
