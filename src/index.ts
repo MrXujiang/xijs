@@ -38,3 +38,6 @@ export { default as coordinatesInRect } from './coordinatesInRect';
 export { default as judgePointInCircle } from './judgePointInCircle';
 export { default as bubbleSort } from './bubbleSort';
 export { default as quickSort } from './quickSort';
+export { default as factorial } from './factorial';
+export { default as fibonacci } from './fibonacci';
+export { default as sum } from './sum';
