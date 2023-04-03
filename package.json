@@ -1,6 +1,6 @@
 {
   "name": "xijs",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "A business - oriented scene Js Library",
   "author": "xuxiaoxi",
   "keywords": [
@@ -15,7 +15,7 @@
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && father-build",
+    "build": "father-build",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "release": "npm run build && npm publish --access public",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
@@ -40,10 +40,10 @@
     "lodash.clonedeep": "^4.5.0",
     "lodash.difference": "^4.5.0",
     "nanoid": "^3.1.30",
-    "qs": "^6.10.1"
+    "qs": "^6.10.1",
+    "@babel/runtime": "^7.18.9"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.18.9",
     "@types/lodash.clonedeep": "^4.5.6",
     "@types/lodash.difference": "^4.5.7",
     "@types/qs": "^6.9.7",

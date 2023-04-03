@@ -45,5 +45,5 @@ export { default as sum } from './sum';
 
 export { default as isEmail } from './isEmail';
 export { default as isIdCard } from './isIdCard';
-export { default as isEnCn } from './isEnCn';
+export { default as lang } from './lang';
 
