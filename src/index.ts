@@ -38,6 +38,12 @@ export { default as coordinatesInRect } from './coordinatesInRect';
 export { default as judgePointInCircle } from './judgePointInCircle';
 export { default as bubbleSort } from './bubbleSort';
 export { default as quickSort } from './quickSort';
+
+export { default as factorial } from './factorial';
+export { default as fibonacci } from './fibonacci';
+export { default as sum } from './sum';
+
 export { default as isEmail } from './isEmail';
 export { default as isIdCard } from './isIdCard';
 export { default as isEnCn } from './isEnCn';
+
