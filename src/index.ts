@@ -38,3 +38,4 @@ export { default as quickSort } from './quickSort';
 export { default as isEmail } from './isEmail';
 export { default as isIdCard } from './isIdCard';
 export { default as isEnCn } from './isEnCn';
+export { default as linkListToArray } from './linkListToArray';
