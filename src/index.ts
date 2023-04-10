@@ -45,6 +45,9 @@ export { default as sum } from './sum';
 
 export { default as isEmail } from './isEmail';
 export { default as isIdCard } from './isIdCard';
+
+export { default as linkListToArray } from './linkListToArray';
+
 export { default as lang } from './lang';
 
 export { default as transformArray } from './transformArray';
