@@ -1,4 +1,4 @@
-const isEnCn = {
+const lang = {
   /**
    *
    * @param str
@@ -19,4 +19,4 @@ const isEnCn = {
   },
 };
 
-export default isEnCn;
+export default lang;

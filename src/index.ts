@@ -33,9 +33,21 @@ export { default as hex2rgba } from './hex2rgba';
 export { default as formatNumber } from './formatNumber';
 export { default as formatPercent } from './formatPercent';
 export { default as difference } from './difference';
+export { default as coordinatesInCircle } from './coordinatesInCircle';
+export { default as coordinatesInRect } from './coordinatesInRect';
+export { default as judgePointInCircle } from './judgePointInCircle';
 export { default as bubbleSort } from './bubbleSort';
 export { default as quickSort } from './quickSort';
+
+export { default as factorial } from './factorial';
+export { default as fibonacci } from './fibonacci';
+export { default as sum } from './sum';
+
 export { default as isEmail } from './isEmail';
 export { default as isIdCard } from './isIdCard';
-export { default as isEnCn } from './isEnCn';
+
 export { default as linkListToArray } from './linkListToArray';
+
+export { default as lang } from './lang';
+
+export { default as transformArray } from './transformArray';

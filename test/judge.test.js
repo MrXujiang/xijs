@@ -1,4 +1,4 @@
-import { isArray, isEmpty, isPhone, isEmail, isIdCard, isEnCn} from '../src/index';
+import { isArray, isEmpty, isPhone, isEmail, isIdCard, lang} from '../src/index';
 
 describe('常用判断函数相关测试', () => {
   test('判断数组类型', () => {
@@ -34,7 +34,7 @@ describe('常用判断函数相关测试', () => {
   });
 
   test('判断中英文', () => {
-    expect(isEnCn.isEn('sadsad')).toBe(true);
-    expect(isEnCn.isCn('萨达')).toBe(true);
+    expect(lang.isEn('sadsad')).toBe(true);
+    expect(lang.isCn('萨达')).toBe(true);
   });
 });

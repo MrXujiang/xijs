@@ -22,6 +22,59 @@
 
 等等开发中常用的工具函数, 轻松提高业务研发效率.
 
+## 全部函数列表
+
+- 浏览器相关
+  - getRuntimeEnv - 获取运行环境
+  - getSelection - 获取选中文本
+  - redirect - 重定向
+  - store - 本地存储库
+- 字符串操作
+  - base64 - base64编码和解码
+  - camelize - 横线转驼峰命名
+  - charCount - 获取字符数
+  - formatNumber - 数值千分位格式化
+  - formatPercent - 值转换为百分数表示
+  - hyCompact - 紧凑型驼峰命名转换
+  - hyphenate - 驼峰命名转横线命名
+  - randomStr - 生成随机字符串
+  - repeat - 生成重复字符串
+  - uuid - 生成唯一id
+- 常用判断函数
+  - isArray - 判断数组类型
+  - isEmpty - 判断空对象
+  - isPc - 判断设备类型
+  - isPhone - 判断手机号格式
+- 数据结构相关
+  - cloneDeep - 数据深拷贝
+  - formatDate - 时间格式化
+  - getRawType - 获取数据类型
+  - obj2url - 将对象参数解析为url字符串
+  - transformTree - 扁平转树结构
+  - url2obj - url字符串转对象  
+- 图片处理函数
+  - compressImg - 自定义压缩图片函数
+  - file2img - 文件转图片对象
+  - hex2rgba - hex色值转rgba
+  - rgba2obj - 将rgba值转化为rgba对象
+- js高级函数
+  - debounce - 防抖函数
+  - parser - json超级解析器
+  - sleep - 睡眠函数
+  - throttle - 节流函数
+- 常用算法和数据结构
+  - bubbleSort - 冒泡排序
+  - quickSort - 快速排序
+- 数学计算
+  - average - 计算数组平均值
+  - difference - 创建一个排除指定项的数组
+  - random - 返回区域内随机数
+  - shuffle - 打乱数组
+- 几何计算
+  - coordinatesInCircle - 生成圆内任意坐标
+  - coordinatesInRect - 生成矩形内任意坐标
+  - judgePointInCircle - 判断一点是否在圆内
+
 ## API Doc
 
 [xijs 文档](http://h5.dooring.cn/xijs)
