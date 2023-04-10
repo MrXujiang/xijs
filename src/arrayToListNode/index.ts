@@ -8,7 +8,7 @@ interface ListNode {
   data: any;
   next?: ListNode;
 }
-const arrayToListNode = (arr: number[]): ListNode | undefined => {
+const arrayToListNode = (arr: any[]): ListNode | undefined => {
   let len = arr.length;
   if (!len) {
     return undefined;
