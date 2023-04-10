@@ -9,7 +9,7 @@ interface ListNode<T> {
   next?: ListNode<T>;
 }
 
-const arrayToListNode = function <T>(arr: Array<T>): ListNode<T> | undefined {
+const arrayToListNode = <T>(arr: Array<T>): ListNode<T> | undefined => {
   let len = arr.length;
   if (!len) {
     return undefined;
