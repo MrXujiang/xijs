@@ -15,7 +15,7 @@ group:
 
 Demo:
 
-```tsx | 
+```tsx | pure
 import {arrayToListNode} from 'xijs'
 
 const arr = [1, 2, 3]
