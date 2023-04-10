@@ -47,3 +47,4 @@ export { default as isEmail } from './isEmail';
 export { default as isIdCard } from './isIdCard';
 export { default as lang } from './lang';
 
+export { default as transformArray } from './transformArray';
