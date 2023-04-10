@@ -4,16 +4,17 @@
  * @param next
  * @constructor
  */
-interface ListNode {
-  data: any;
-  next?: ListNode;
+interface ListNode<T> {
+  data: T;
+  next?: ListNode<T>;
 }
-const arrayToListNode = (arr: any[]): ListNode | undefined => {
+
+const arrayToListNode = function <T>(arr: Array<T>): ListNode<T> | undefined {
   let len = arr.length;
   if (!len) {
     return undefined;
   }
-  let node: ListNode = {
+  let node: ListNode<T> = {
     data: arr[len - 1],
   }
   for (let i = len - 2; i >= 0; i--) {
@@ -23,5 +24,5 @@ const arrayToListNode = (arr: any[]): ListNode | undefined => {
     };
   }
   return node;
-};
+}
 export default arrayToListNode;

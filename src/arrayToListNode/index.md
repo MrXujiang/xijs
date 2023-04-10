@@ -15,7 +15,7 @@ group:
 
 Demo:
 
-```tsx | pure
+```tsx | 
 import {arrayToListNode} from 'xijs'
 
 const arr = [1, 2, 3]
@@ -24,5 +24,7 @@ const arr1 = []
 console.log(arrayToListNode(arr1))
 let arr2 = ['ok', 'next', 'post', 'type']
 console.log(arrayToListNode(arr2))
+let arr3 = [true, false]
+console.log(arrayToListNode(arr3))
 
 ```  

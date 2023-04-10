@@ -230,5 +230,14 @@ describe('数据结构相关测试', () => {
       }
     }
     expect(arrayToListNode(arr2)).toEqual(result2)
+
+    let arr3 = [true, false]
+    let result3 = {
+      data: true,
+      next: {
+        data: false
+      }
+    }
+    expect(arrayToListNode(arr3)).toEqual(result3)
   });
 });
