@@ -4,20 +4,24 @@
  * @param next
  * @constructor
  */
-function ListNode(this: any, data: undefined, next: undefined) {
-  this.data = (data === undefined ? 0 : data)
-  this.next = (next === undefined ? null : next)
+interface ListNode {
+  data: any;
+  next?: ListNode;
 }
-// 将数组转化为链表
-const arrayToListNode = (arr: any[]) => {
-  if (arr.length === 0) {
-    // @ts-ignore
-    return new ListNode(null, null)
+const arrayToListNode = (arr: number[]): ListNode | undefined => {
+  let len = arr.length;
+  if (!len) {
+    return undefined;
   }
-  // @ts-ignore
-  const nodes = arr.map(data => new ListNode(data))
-  nodes.reduce((prev: { next: any }, curr: any) => (prev.next = curr))
-  return nodes[0];
-}
-
+  let node: ListNode = {
+    data: arr[len - 1],
+  }
+  for (let i = len - 2; i >= 0; i--) {
+    node = {
+      data: arr[i],
+      next: node,
+    };
+  }
+  return node;
+};
 export default arrayToListNode;

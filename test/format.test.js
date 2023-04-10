@@ -205,7 +205,6 @@ describe('数据结构相关测试', () => {
           data: 3,
           next: {
             data: 4,
-            next: null
           }
         }
       }
@@ -213,10 +212,7 @@ describe('数据结构相关测试', () => {
     let arr = [1, 2, 3, 4]
     expect(arrayToListNode(arr)).toEqual(result)
 
-    let result1 = {
-      next: null,
-      data: null
-    }
+    let result1 = undefined
     let arr1 = []
     expect(arrayToListNode(arr1)).toEqual(result1)
   });
