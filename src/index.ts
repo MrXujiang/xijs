@@ -51,3 +51,5 @@ export { default as linkListToArray } from './linkListToArray';
 export { default as lang } from './lang';
 
 export { default as transformArray } from './transformArray';
+
+export { default as arrayToListNode } from './arrayToListNode';
