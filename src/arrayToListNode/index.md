@@ -22,5 +22,9 @@ const arr = [1, 2, 3]
 console.log(arrayToListNode(arr))
 const arr1 = []
 console.log(arrayToListNode(arr1))
+let arr2 = ['ok', 'next', 'post', 'type']
+console.log(arrayToListNode(arr2))
+let arr3 = [true, false]
+console.log(arrayToListNode(arr3))
 
 ```  

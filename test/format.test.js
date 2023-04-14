@@ -215,5 +215,29 @@ describe('数据结构相关测试', () => {
     let result1 = undefined
     let arr1 = []
     expect(arrayToListNode(arr1)).toEqual(result1)
+
+    let arr2 = ['ok', 'next', 'post', 'type']
+    let result2 = {
+      data: 'ok',
+      next: {
+        data: 'next',
+        next: {
+          data: 'post',
+          next: {
+            data: 'type',
+          }
+        }
+      }
+    }
+    expect(arrayToListNode(arr2)).toEqual(result2)
+
+    let arr3 = [true, false]
+    let result3 = {
+      data: true,
+      next: {
+        data: false
+      }
+    }
+    expect(arrayToListNode(arr3)).toEqual(result3)
   });
 });
