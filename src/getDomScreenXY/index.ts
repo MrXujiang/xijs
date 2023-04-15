@@ -7,7 +7,7 @@
  * @Description: 获取dom节点相对于screen定位。
  */
 
-function  getDomPageXY (selector:string) {
+function  getDomScreenXY (selector:string) {
     const element= document.querySelector(selector)
     if(element){
      const {top,left}=element.getBoundingClientRect();
@@ -18,5 +18,5 @@ function  getDomPageXY (selector:string) {
     
     };
     
-    export default getDomPageXY
+    export default getDomScreenXY
     
