@@ -51,5 +51,12 @@ export { default as linkListToArray } from './linkListToArray';
 export { default as lang } from './lang';
 
 export { default as transformArray } from './transformArray';
-
 export { default as arrayToListNode } from './arrayToListNode';
+export { default as $ } from './getDom';
+export { default as getDomText } from './getDomText';
+export { default as getDomPageXY } from './getDomPageXY';
+export { default as getDomScreenXY } from './getDomScreenXY';
+
+
+
+
