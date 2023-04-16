@@ -1,6 +1,6 @@
 {
   "name": "xijs",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A business - oriented scene Js Library",
   "author": "xuxiaoxi",
   "keywords": [
@@ -10,6 +10,12 @@
     "Js Library",
     "lodash",
     "lowcode tool"
+  ],
+  "contributors": [
+    "徐小夕",
+    "wujixialan",
+    "EasyRo",
+    "bigFace2019"
   ],
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && dumi dev",
