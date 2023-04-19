@@ -15,7 +15,7 @@ group:
 
 Demo:
 
-```tsx | 
+```tsx | pure
 
 // 按需引入的方式
 import {timeSub} from 'xijs';
