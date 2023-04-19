@@ -56,6 +56,8 @@ export { default as $ } from './getDom';
 export { default as getDomText } from './getDomText';
 export { default as getDomPageXY } from './getDomPageXY';
 export { default as getDomScreenXY } from './getDomScreenXY';
+export { default as xss } from './xss';
+export { default as DateCalculate } from './dateCalculate';
 
 
 
