@@ -15,7 +15,7 @@ group:
 
 Demo:
 
-```tsx | 
+```tsx | pure
 import {xss} from 'xijs';
 let html = '<a href="#">Me & you</a>'
 console.log(xss(html))
