@@ -1,4 +1,4 @@
-import { isArray, isEmpty, isPhone, isEmail, isIdCard, lang} from '../src/index';
+import { isArray, isEmpty, isPhone, isEmail, isIdCard, lang, regex, phoneRegexp, carNumberRegexp} from '../src/index';
 
 describe('常用判断函数相关测试', () => {
   test('判断数组类型', () => {
@@ -36,5 +36,11 @@ describe('常用判断函数相关测试', () => {
   test('判断中英文', () => {
     expect(lang.isEn('sadsad')).toBe(true);
     expect(lang.isCn('萨达')).toBe(true);
+  });
+
+  test('正则表达式判断', () => {
+    expect(regex(phoneRegexp, '18396781187')).toBe(true);
+    expect(regex(phoneRegexp, '1839678118')).toBe(false);
+    expect(regex(carNumberRegexp, 'LHGTG2824K8024652')).toBe(true);
   });
 });
