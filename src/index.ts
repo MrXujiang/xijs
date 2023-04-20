@@ -97,3 +97,16 @@ export const carNumberRegexp = /^[A-HJ-NPR-Z\d]{8}[X\d][A-HJ-NPR-Z\d]{3}\d{5}$/
 
 // 帐号是否合法(字母开头，允许5-16位，允许字母数字下划线)： 正则表达式
 export const accountRegexp = /^[a-zA-Z][a-zA-Z0-9_]{4,15}$/
+
+// rgb 颜色 正则表达式
+export const rgbRegexp = /^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/
+// rgba 颜色 正则表达式
+export const rgbaRegexp = /^rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*([01](\.\d+)?)\s*\)$/
+// 十六进制颜色代码 正则表达式
+export const numberRegexp = /^#(?:[0-9a-fa-f]{3}){1,2}$/
+// 匹配 hsl 值 正则表达式
+export const hslRegexp = /^hsl\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*\)$/
+// 匹配 hsla 值 正则表达式
+export const hslaRegexp = /^hsla\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*,\s*([01](\.\d+)?)\s*\)$/
+
+
