@@ -12,6 +12,10 @@ group:
 ## timeSub
 
 > 计算两个时间间隔: 返回值为 毫秒
+> 
+> timeSub(start, end): start 是new Date()或者格式化时间字符串， end 是new Date()或者格式化时间字符串
+> 
+> 返回值为 毫秒: 3600000
 
 Demo:
 
