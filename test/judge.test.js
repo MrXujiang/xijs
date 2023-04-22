@@ -1,4 +1,4 @@
-import { isArray, isEmpty, isPhone, isEmail, isIdCard, lang, regex, phoneRegexp, carNumberRegexp} from '../src/index';
+import { isArray, isEmpty, isPhone, isEmail, isIdCard, lang, regex} from '../src/index';
 
 describe('常用判断函数相关测试', () => {
   test('判断数组类型', () => {
