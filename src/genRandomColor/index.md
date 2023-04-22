@@ -4,7 +4,7 @@ nav:
   title: 使用文档
   path: /lib
 group:
- path: /imageTool
+  path: /imageTool
   title: 图片处理函数
   order: 8
 ---
