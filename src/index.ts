@@ -59,6 +59,7 @@ export { default as getDomScreenXY } from './getDomScreenXY';
 export { default as xss } from './xss';
 export { default as dateCalculate } from './dateCalculate';
 export { default as timeSub } from './timeSub';
+export { default as genRandomColor } from './genRandomColor';
 
 
 
