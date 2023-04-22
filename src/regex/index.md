@@ -38,7 +38,7 @@ group:
 
 Demo:
 
-```tsx | 
+```tsx | pure
 // 全量引用
 // import  * as xijs from 'xijs';
 //
