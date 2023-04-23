@@ -3,8 +3,6 @@
  * @param timestamp 需要计算的时间戳
  */
 const timeCutStr = (timestamp: number): string => {
-  if (!timestamp) return '未知时间';
-
   const now = Date.now();
   const diff = Math.abs(now - timestamp);
 
