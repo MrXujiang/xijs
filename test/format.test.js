@@ -260,8 +260,11 @@ describe('数据结构相关测试', () => {
     const oneSecondAgo = now - 1000;
     const oneSecondLater = now + 1000;
 
-    expect(timeCutStr(now)).toEqual('刚刚');
-    expect(timeCutStr(oneSecondAgo)).toEqual('1秒前');
+    // 格式化的时间字符串
+    expect(timeCutStr(formatDate(now))).toEqual('刚刚');
+    // 时间戳字符串
+    expect(timeCutStr(String(oneSecondAgo))).toEqual('1秒前');
+    // 时间戳
     expect(timeCutStr(oneSecondLater)).toEqual('1秒后');
   });
 });
