@@ -60,8 +60,4 @@ export { default as xss } from './xss';
 export { default as dateCalculate } from './dateCalculate';
 export { default as timeSub } from './timeSub';
 export { default as genRandomColor } from './genRandomColor';
-
-
-
-
-
+export { default as regex } from './regex';

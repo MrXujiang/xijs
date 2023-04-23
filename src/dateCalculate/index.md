@@ -12,6 +12,16 @@ group:
 ## dateCalculate
 
 > 对日期进行计算，比如计算前一天，前一个月，后一天，后一个月等等
+> 
+> dateCalculate(date, num, flag): 
+> 
+> date: 是new Date() 或者 格式化时间字符串，
+> 
+> num: 是需要加上或者减去的数字 加为整数(例如：1)，减为负数(例如：-1)，
+> 
+> flag：是需要对日期的哪一个进行计算：年(year)、月(month)、日(day)、小时(hour)、分钟(minute)、秒(second)、毫秒(milliseconds)
+> 
+> 返回值：string类型。已经格式化好的字符串(例如：2019-01-01 08:00:00)
 
 Demo:
 
