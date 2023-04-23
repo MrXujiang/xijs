@@ -63,3 +63,4 @@ export { default as genRandomColor } from './genRandomColor';
 export { default as regex } from './regex';
 export { default as downloadFileWithText } from './donwloadFileWithText';
 export { default as downloadFileWithUrl } from './downloadFileWithUrl';
+export { default as timeCutStr } from './timeCutStr';
