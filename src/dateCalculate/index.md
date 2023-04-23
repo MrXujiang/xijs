@@ -31,7 +31,6 @@ Demo:
 import {dateCalculate, formatDate} from 'xijs';
 
 let data = new Date('2020-01-01')
-console.log('-------------: ', formatDate(data))
 console.log('year:', dateCalculate(data, -1, 'year'))
 
 data = new Date('2020-01-01')

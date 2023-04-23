@@ -39,7 +39,7 @@ const dateCalculate = (dateStr: string | Date, num: number, flag: DateType, form
     let result = dateTypeMap[flag](date, num);
     return formatDate(result, format)
   } else {
-    throw Error("请输入正确的正则类型");
+    throw Error("请输入正确的计算参数(仅支持 年、月、日、时、分、秒、毫秒)");
   }
 }
 
