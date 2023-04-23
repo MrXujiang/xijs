@@ -61,3 +61,5 @@ export { default as dateCalculate } from './dateCalculate';
 export { default as timeSub } from './timeSub';
 export { default as genRandomColor } from './genRandomColor';
 export { default as regex } from './regex';
+export { default as downloadFileWithText } from './donwloadFileWithText';
+export { default as downloadFileWithUrl } from './downloadFileWithUrl';
