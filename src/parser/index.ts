@@ -45,7 +45,7 @@ const parser = {
 
     if (this.isObj(obj)) {
       result = {};
-      for (let key in obj) {
+      for (const key in obj) {
         const v = (obj as IObject)[key];
         if (this.isFunc(v)) {
           result[key] = `${this.FUNC_PREFIX}${v}`;
@@ -60,7 +60,10 @@ const parser = {
 
     return result;
   },
-  parse: function (jsonStr: string, error?: (err: Error | unknown) => {}) {
+  parse: function (
+    jsonStr: string,
+    error?: (err: Error | unknown) => Record<string, any>,
+  ) {
     try {
       return JSON.parse(jsonStr, (key, value) => {
         if (value && typeof value === 'string') {
@@ -82,7 +85,7 @@ const parser = {
     obj: any,
     replacer?: (key: string, value: any) => any,
     space?: number | string,
-    error?: (err: Error | unknown) => {},
+    error?: (err: Error | unknown) => Record<string, any>,
   ) {
     try {
       let _obj = obj;
@@ -105,7 +108,7 @@ const parser = {
   fastStringify: function (
     obj: any,
     space?: number | string,
-    error?: (err: Error | unknown) => {},
+    error?: (err: Error | unknown) => Record<string, any>,
   ) {
     try {
       return JSON.stringify(

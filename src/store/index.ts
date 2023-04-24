@@ -21,8 +21,9 @@ const store = {
     cb?: (status: number, key: string, value: string | number) => void,
   ) {
     let _status = this.status.SUCCESS,
-      _key = this.getKey(key),
       _time;
+
+    const _key = this.getKey(key);
     // 设置失效时间，未设置时间默认为一个月
     try {
       _time = time
@@ -42,11 +43,12 @@ const store = {
     key: string,
     cb?: (status: number, value: string | number | null) => void,
   ) {
-    let status = this.status.SUCCESS,
-      _key = this.getKey(key),
-      value = null,
+    const _key = this.getKey(key),
       timeSignLen = this.timeSign.length,
-      that = this,
+      that = this;
+
+    let status = this.status.SUCCESS,
+      value = null,
       index,
       time,
       result;
@@ -84,8 +86,9 @@ const store = {
     key: string,
     cb?: (status: number, value: string | number | null) => void,
   ) {
+    const _key = this.getKey(key);
+
     let status = this.status.FAILURE,
-      _key = this.getKey(key),
       value;
     try {
       value = this.storage.getItem(_key);

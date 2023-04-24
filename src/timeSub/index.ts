@@ -4,11 +4,11 @@
  * @param end：结束时间
  */
 const timeSub = (start: string | Date, end: string | Date): number => {
-  let startDate = new Date(start)
-  let endDate = new Date(end)
-  let date = endDate.getTime() - startDate.getTime()
-  let misSecond = Math.floor(date);
-  return misSecond
-}
+  const startDate = new Date(start);
+  const endDate = new Date(end);
+  const date = endDate.getTime() - startDate.getTime();
+  const misSecond = Math.floor(date);
+  return misSecond;
+};
 
 export default timeSub;

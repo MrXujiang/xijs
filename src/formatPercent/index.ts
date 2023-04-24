@@ -7,7 +7,7 @@ const judgeIsNumber = (value: any) =>
  * @param value 任何值
  * @param precision 小数位
  */
-function formatPercent(value: any, precision: number = 2): string {
+function formatPercent(value: any, precision = 2): string {
   let result = '0';
   if (judgeIsNumber(value) && value !== 0) {
     result =

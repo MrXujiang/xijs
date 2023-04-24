@@ -4,7 +4,7 @@
  * @param format
  * @returns
  */
-function formatDate(time: number, format: string = 'YY-MM-DD hh:mm:ss') {
+function formatDate(time: number, format = 'YY-MM-DD hh:mm:ss') {
   const date = new Date(time);
 
   const year = date.getFullYear(),
@@ -13,7 +13,8 @@ function formatDate(time: number, format: string = 'YY-MM-DD hh:mm:ss') {
     hour = date.getHours(),
     min = date.getMinutes(),
     sec = date.getSeconds();
-  const preArr = Array.apply(null, Array(10)).map(function (elem, index) {
+
+  const preArr = [...Array(10)].map(function (elem, index) {
     return '0' + index;
   });
 

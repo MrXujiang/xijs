@@ -1,12 +1,12 @@
 import { linkListToArray } from '../src/index';
 
 describe('链表相关测试', () => {
-    test('链表结构转换为数组结构', () => {
-        const linkList = {
-            value: 100,
-            next: { value: 200, next: { value: 300, next: { value: 400 } } },
-        };
-        const arr = [100,200,300,400]
-        expect(linkListToArray(linkList)).toEqual(arr);
-    });
+  test('链表结构转换为数组结构', () => {
+    const linkList = {
+      value: 100,
+      next: { value: 200, next: { value: 300, next: { value: 400 } } },
+    };
+    const arr = [100, 200, 300, 400];
+    expect(linkListToArray(linkList)).toEqual(arr);
+  });
 });

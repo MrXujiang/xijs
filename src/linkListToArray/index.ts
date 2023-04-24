@@ -1,20 +1,20 @@
 interface ListNode {
-    value: number;
-    next?: ListNode;
+  value: number;
+  next?: ListNode;
 }
 /**
- * 
- * @param linkList 
- * @returns 
+ *
+ * @param linkList
+ * @returns
  */
 const linkListToArray = (linkList: ListNode | undefined): Array<any> => {
-    let arr = []
-    let header = linkList
-    while (header) {
-        arr.push(header.value)
-        header = header.next
-    }
-    return arr
-}
+  const arr = [];
+  let header = linkList;
+  while (header) {
+    arr.push(header.value);
+    header = header.next;
+  }
+  return arr;
+};
 
 export default linkListToArray;

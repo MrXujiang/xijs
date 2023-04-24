@@ -7,16 +7,29 @@ const regex = (regexp: IRegType, text: string): boolean => {
   if (regexpMap[regexp]) {
     return regexpMap[regexp](text);
   } else {
-    throw Error("请输入正确的正则类型");
+    throw Error('请输入正确的正则类型');
   }
 };
 
 // 正则表达式类型
-type IRegType = "emailRegexp" | "phoneRegexp" | "fixPhone" | "idRegexp" | "ipv4Regexp" | "chineseRegexp" | "qqRegexp"
-  | "chinesePostcodeRegexp" | "usPostcodeRegexp" | "ukPostcodeRegexp" | "carNumberRegexp" | "accountRegexp"
-  | "rgbRegexp" | "rgbaRegexp" | "numberRegexp" | "hslRegexp" | "hslaRegexp"
-
-  ;
+type IRegType =
+  | 'emailRegexp'
+  | 'phoneRegexp'
+  | 'fixPhone'
+  | 'idRegexp'
+  | 'ipv4Regexp'
+  | 'chineseRegexp'
+  | 'qqRegexp'
+  | 'chinesePostcodeRegexp'
+  | 'usPostcodeRegexp'
+  | 'ukPostcodeRegexp'
+  | 'carNumberRegexp'
+  | 'accountRegexp'
+  | 'rgbRegexp'
+  | 'rgbaRegexp'
+  | 'numberRegexp'
+  | 'hslRegexp'
+  | 'hslaRegexp';
 
 /**
  * 正则表达式支持的列表
@@ -28,7 +41,9 @@ const regexpMap = {
   },
   // 手机号码 的正则表达式
   phoneRegexp: (text: string): boolean => {
-    return /^(13[0-9]|14[5|7]|15[0|1|2|3|4|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/.test(text);
+    return /^(13[0-9]|14[5|7]|15[0|1|2|3|4|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/.test(
+      text,
+    );
   },
   // 国内电话号码 的正则表达式
   fixPhone: (text: string): boolean => {
@@ -40,7 +55,9 @@ const regexpMap = {
   },
   // IPv4 的正则表达式
   ipv4Regexp: (text: string): boolean => {
-    return /((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})){3}/.test(text);
+    return /((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})(\.((2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2})){3}/.test(
+      text,
+    );
   },
   // 是否包含中文 的正则表达式
   chineseRegexp: (text: string): boolean => {
@@ -78,11 +95,15 @@ const regexpMap = {
   },
   // rgb 颜色 正则表达式
   rgbRegexp: (text: string): boolean => {
-    return /^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/.test(text);
+    return /^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/.test(
+      text,
+    );
   },
   // rgba 颜色 正则表达式
   rgbaRegexp: (text: string): boolean => {
-    return /^rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*([01](\.\d+)?)\s*\)$/.test(text);
+    return /^rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*([01](\.\d+)?)\s*\)$/.test(
+      text,
+    );
   },
   // 十六进制颜色代码 正则表达式
   numberRegexp: (text: string): boolean => {
@@ -90,14 +111,16 @@ const regexpMap = {
   },
   // 匹配 hsl 值 正则表达式
   hslRegexp: (text: string): boolean => {
-    return /^hsl\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*\)$/.test(text);
+    return /^hsl\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*\)$/.test(
+      text,
+    );
   },
   // 匹配 hsla 值 正则表达式
   hslaRegexp: (text: string): boolean => {
-    return /^hsla\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*,\s*([01](\.\d+)?)\s*\)$/.test(text);
-  }
-
-
+    return /^hsla\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*,\s*([01](\.\d+)?)\s*\)$/.test(
+      text,
+    );
+  },
 };
 
 export default regex;
