@@ -6,7 +6,7 @@
 
 function coordinatesInCircle(
   center: [number, number],
-  r: number = 1,
+  r = 1,
 ): [number, number] {
   if (center && Array.isArray(center) && center.length === 2) {
     const [xAxis, yAxis]: [number, number] = center,
@@ -15,6 +15,7 @@ function coordinatesInCircle(
 
     let pointX: number, pointY: number;
 
+    // eslint-disable-next-line no-constant-condition
     while (true) {
       // 生成大于等于 xValueRange[0]，小于等于 xValueRange[1] 的 x 坐标
       pointX =

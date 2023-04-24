@@ -11,9 +11,9 @@ function compressImg(
   type: string,
   mx: number,
   mh: number,
-  quality: number = 1,
+  quality = 1,
 ) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
     const { width: originWidth, height: originHeight } = img;

@@ -5,11 +5,11 @@
  */
 
 export const obj2url = (data: any, isPrefix?: boolean) => {
-  let prefix = isPrefix ? '?' : '';
+  const prefix = isPrefix ? '?' : '';
 
-  let _result = [];
-  for (let key in data) {
-    let value = data[key];
+  const _result = [];
+  for (const key in data) {
+    const value = data[key];
     // 去掉为空的参数
     if (['', undefined, null].includes(value)) {
       continue;

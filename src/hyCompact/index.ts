@@ -3,7 +3,7 @@
  * @param str
  * @returns
  */
-function hyCompact(str: string, flag: string = '-') {
+function hyCompact(str: string, flag = '-') {
   let temp = str.replace(/[A-Z]{1,2}/g, function (match) {
     return flag + match.toLowerCase();
   });

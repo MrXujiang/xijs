@@ -26,7 +26,9 @@
     "release": "npm run build && npm publish --access public",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "lint": "eslint . --ext .ts --fix",
+    "prepare": "husky install"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -35,30 +37,35 @@
     "pre-commit": "yarn test"
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
+    "*.{ts}": [
+      "npm run lint"
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.18.9",
     "lodash.clonedeep": "^4.5.0",
     "lodash.difference": "^4.5.0",
     "nanoid": "^3.1.30",
-    "qs": "^6.10.1",
-    "@babel/runtime": "^7.18.9"
+    "qs": "^6.10.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
     "@types/lodash.clonedeep": "^4.5.6",
     "@types/lodash.difference": "^4.5.7",
     "@types/qs": "^6.9.7",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.0.17",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
-    "lint-staged": "^10.0.7",
-    "prettier": "^2.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.8",
     "yorkie": "^2.0.0"
   },
   "publishConfig": {

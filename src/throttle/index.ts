@@ -4,7 +4,7 @@
  * @param delay
  * @returns
  */
-function throttle(fn: Function, delay: number) {
+function throttle(fn: () => void, delay: number) {
   let flag = true;
   return (...args: any) => {
     if (flag) {
