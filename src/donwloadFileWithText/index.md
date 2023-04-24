@@ -23,6 +23,7 @@ Demo:
 
 ```tsx | pure
 import { downloadFileWithText } from 'xijs';
+
 // 下载内容为 xijs 的txt文件
 downloadFileWithText('xijs');
 ```

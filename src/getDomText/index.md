@@ -18,5 +18,4 @@ import { getDomText } from 'xijs';
 
 // 获取文本内容
 const dom = getDomText('#id');
-
 ```
