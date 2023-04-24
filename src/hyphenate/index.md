@@ -17,6 +17,7 @@ Demo:
 
 ```tsx | pure
 import { hyphenate } from 'xijs';
+
 // 默认用横线分隔
 const name = hyphenate('EaCdEf');
 console.log(name); // EaCdEf ==> ea-cd-ef

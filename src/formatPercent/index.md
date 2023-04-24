@@ -17,6 +17,7 @@ Demo:
 
 ```tsx | pure
 import { formatPercent } from 'xijs';
+
 const num = formatPercent(0.1234, 2);
 console.log(num); // -> 12.34%
 ```

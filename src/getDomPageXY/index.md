@@ -18,5 +18,4 @@ import { getDomPageXY } from 'xijs';
 
 // 获取dom元素在当前文档中的绝对位置
 const dom = getDomPageXY('#id');
-
 ```

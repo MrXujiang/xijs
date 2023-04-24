@@ -18,5 +18,4 @@ import { genRandomColor } from 'xijs';
 
 // 获取随机颜色'hsl'|'hsla'|'rgb'|'rgba'|16，默认是rgb格式。
 const color = genRandomColor('rgba');
-
 ```
