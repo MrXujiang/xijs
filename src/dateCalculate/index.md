@@ -28,7 +28,7 @@ Demo:
 ```tsx | pure
 
 // 按需引入的方式
-import {dateCalculate} from 'xijs';
+import {dateCalculate, formatDate} from 'xijs';
 
 let data = new Date('2020-01-01')
 console.log('year:', dateCalculate(data, -1, 'year'))
@@ -39,12 +39,12 @@ console.log('month:', dateCalculate(data, -1, 'month'))
 data = new Date('2020-01-01')
 console.log('day:', dateCalculate(data, -1, 'day'))
 
-data = new Date('2020-01-01 08:00:08')
+data = new Date('2020-01-01 08:00:00')
 console.log('hour:', dateCalculate(data, -1, 'hour'))
 
-data = new Date('2020-01-01 08:00:08')
+data = new Date('2020-01-01 08:00:00')
 console.log('minute:', dateCalculate(data, -1, 'minute'))
 
-data = new Date('2020-01-01 08:00:08')
+data = new Date('2020-01-01 08:00:00')
 console.log('second:', dateCalculate(data, -1, 'second'))
 ```

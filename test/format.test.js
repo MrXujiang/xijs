@@ -9,6 +9,7 @@ import {
   arrayToListNode,
   dateCalculate,
   timeSub,
+  timeCutStr,
 } from '../src/index';
 describe('数据结构相关测试', () => {
   test('数据深拷贝', () => {
@@ -207,18 +208,18 @@ describe('数据结构相关测试', () => {
           data: 3,
           next: {
             data: 4,
-          }
-        }
-      }
-    }
-    let arr = [1, 2, 3, 4]
-    expect(arrayToListNode(arr)).toEqual(result)
+          },
+        },
+      },
+    };
+    let arr = [1, 2, 3, 4];
+    expect(arrayToListNode(arr)).toEqual(result);
 
-    let result1 = undefined
-    let arr1 = []
-    expect(arrayToListNode(arr1)).toEqual(result1)
+    let result1 = undefined;
+    let arr1 = [];
+    expect(arrayToListNode(arr1)).toEqual(result1);
 
-    let arr2 = ['ok', 'next', 'post', 'type']
+    let arr2 = ['ok', 'next', 'post', 'type'];
     let result2 = {
       data: 'ok',
       next: {
@@ -227,30 +228,43 @@ describe('数据结构相关测试', () => {
           data: 'post',
           next: {
             data: 'type',
-          }
-        }
-      }
-    }
-    expect(arrayToListNode(arr2)).toEqual(result2)
+          },
+        },
+      },
+    };
+    expect(arrayToListNode(arr2)).toEqual(result2);
 
-    let arr3 = [true, false]
+    let arr3 = [true, false];
     let result3 = {
       data: true,
       next: {
-        data: false
-      }
-    }
-    expect(arrayToListNode(arr3)).toEqual(result3)
+        data: false,
+      },
+    };
+    expect(arrayToListNode(arr3)).toEqual(result3);
   });
 
   test('日期计算测试', () => {
     // 计算n天前或者n天后的时间
-    let date = new Date('2020-01-01')
-    expect(dateCalculate(date, -1, 'year')).toEqual('2019-01-01 08:00:00')
+    let date = new Date('2020-01-01');
+    expect(dateCalculate(date, -1, 'year')).toEqual('2019-01-01 08:00:00');
 
+    let start = new Date('2020-01-01 08:00:08');
+    let end = new Date('2020-01-01 09:00:08');
+    expect(timeSub(start, end)).toEqual(3600000);
+  });
 
-    let start = new Date('2020-01-01 08:00:08')
-    let end = new Date('2020-01-01 09:00:08')
-    expect(timeSub(start, end)).toEqual(3600000)
+  test('计算时间差', () => {
+    // 计算与当前时间的时间差
+    const now = +new Date();
+    const oneSecondAgo = now - 1000;
+    const oneSecondLater = now + 1000;
+
+    // 格式化的时间字符串
+    expect(timeCutStr(formatDate(now))).toEqual('刚刚');
+    // 时间戳字符串
+    expect(timeCutStr(String(oneSecondAgo))).toEqual('1秒前');
+    // 时间戳
+    expect(timeCutStr(oneSecondLater)).toEqual('1秒后');
   });
 });
