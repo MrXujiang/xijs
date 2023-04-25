@@ -20,6 +20,7 @@ group:
 > fixPhone： 国内电话号码 <br>
 > idRegexp： 身份证号(15 位、18 位数字)<br>
 > ipv4Regexp： IPv4<br>
+> ipv6Regexp： IPv6<br>
 > chineseRegexp： 是否包含中文<br>
 > qqRegexp： 匹配 qq 号 腾讯 QQ 号从 10000 开始<br>
 > chinesePostcodeRegexp： 匹配中国邮政编码<br>
