@@ -2,7 +2,7 @@
  * 计算传入的时间和当前时间的差值，比如计算几秒前、几分前、几秒后、几分后等等
  * @param timestamp 需要计算的时间戳
  */
-const timeCutStr = (time: string | number): string => {
+const timeCutStr = (time: string | number) => {
   let newTime = time;
 
   if (typeof newTime === 'string') {
