@@ -54,4 +54,7 @@ console.log('18396781187: ', regex('phoneRegexp', '18396781187'))
 console.log('1839678117 : ', regex('phoneRegexp', '1839678117'))
 
 console.log('车架号: ', regex('carNumberRegexp', 'LHGTG2824K8024652'))
+console.log('ipv6: ', regex('ipv6Regexp', '1030::C9B4:FF12:48AA:1A2B'))
+console.log('ipv6: ', regex('ipv6Regexp', 'AD80:0000:0000:0000:ABAA:0000:00C2:0002'))
+console.log('ipv6: ', regex('ipv6Regexp', ''))
 ```
