@@ -23,6 +23,7 @@ Demo:
 
 ```tsx | pure
 import { transformArray } from 'xijs';
+
 const tree = [
   {
     id: '0',

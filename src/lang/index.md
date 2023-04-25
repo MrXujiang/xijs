@@ -11,7 +11,7 @@ group:
 
 ## lang
 
-> lang  语言处理函数
+> lang 语言处理函数
 
 - lang.isEn 英文
 - lang.isCn 中文
