@@ -20,6 +20,5 @@
     "@typescript-eslint/no-explicit-any": "off",
     "no-console": "error",
     "@typescript-eslint/no-this-alias": "off"
-  },
-  "ignorePatterns": ["**/*.test.js"]
+  }
 }
