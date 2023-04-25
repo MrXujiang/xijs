@@ -20,6 +20,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "no-console": "off",
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "no-constant-condition": "off",
     "@typescript-eslint/no-this-alias": "off"
   },
   "ignorePatterns": ["**/*.test.js"]
