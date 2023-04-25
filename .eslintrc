@@ -18,7 +18,7 @@
   "rules": {
     "semi": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "no-console": "error",
+    "no-console": "off",
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "@typescript-eslint/no-this-alias": "off"
   },
