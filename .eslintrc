@@ -18,7 +18,6 @@
   "rules": {
     "semi": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "no-console": "off",
     "prettier/prettier": ["off", { "endOfLine": "auto" }],
     "no-constant-condition": "off",
     "@typescript-eslint/no-this-alias": "off"
