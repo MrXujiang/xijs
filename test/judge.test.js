@@ -6,6 +6,8 @@ import {
   isIdCard,
   lang,
   regex,
+  minBy,
+  maxBy
 } from '../src/index';
 
 describe('常用判断函数相关测试', () => {
@@ -51,4 +53,32 @@ describe('常用判断函数相关测试', () => {
     expect(regex('phoneRegexp', '1839678118')).toBe(false);
     expect(regex('carNumberRegexp', 'LHGTG2824K8024652')).toBe(true);
   });
+  test('对象数组最小值', () => {
+    const NumberArr = [{ id: 1 }, { id: 2 }, { id: 3 }]
+    const StringArr = [{ id: 'A' }, { id: 'a' }, { id: 'b' }]
+    const ChartArr = [{ id: '我' }, { id: '你' }, { id: '他' }]
+    const StringNumberarr = [{ id: '我' }, { id: 2 }, { id: '1' }]
+    const NumberMin = minBy(NumberArr, (arr) => { return arr.id })
+    const StringMin = minBy(StringArr, (arr) => { return arr.id })
+    const ChartMin = minBy(ChartArr, (arr) => { return arr.id })
+    const StringNumberMin = minBy(StringNumberarr, (arr) => { return arr.id })
+    expect({ id: 1 }).toEqual(NumberMin)
+    expect({ id: 'A' }).toEqual(StringMin)
+    expect({ id: '他' }).toEqual(ChartMin)
+    expect({ id: '1' }).toEqual(StringNumberMin)
+  })
+  test('对象数组最大值', () => {
+    const NumberArr = [{ id: 1 }, { id: 2 }, { id: 3 }]
+    const StringArr = [{ id: 'A' }, { id: 'a' }, { id: 'b' }]
+    const ChartArr = [{ id: '我' }, { id: '你' }, { id: '他' }]
+    const StringNumberarr = [{ id: '我' }, { id: 2 }, { id: '1' }]
+    const NumberMin = maxBy(NumberArr, (arr) => { return arr.id })
+    const StringMin = maxBy(StringArr, (arr) => { return arr.id })
+    const ChartMin = maxBy(ChartArr, (arr) => { return arr.id })
+    const StringNumberMin = maxBy(StringNumberarr, (arr) => { return arr.id })
+    expect({ id: 3 }).toEqual(NumberMin)
+    expect({ id: 'b' }).toEqual(StringMin)
+    expect({ id: '我' }).toEqual(ChartMin)
+    expect({ id: '我' }).toEqual(StringNumberMin)
+  })
 });
