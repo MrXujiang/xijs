@@ -9,6 +9,7 @@ import {
   randomStr,
   repeat,
   uuid,
+  completeIp,
 } from '../src/index';
 
 describe('字符串操作相关测试', () => {
@@ -75,5 +76,9 @@ describe('字符串操作相关测试', () => {
   test('生成唯一 id', () => {
     // Why uuid is undefined?
     console.log('uuid function ---> ', uuid);
+  });
+
+  test('ip 补全', () => {
+    expect(completeIp('127.0.0.1')).toBe('127.000.000.001');
   });
 });
