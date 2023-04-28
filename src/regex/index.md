@@ -53,4 +53,5 @@ console.log('18396781187: ', regex('phoneRegexp', '18396781187'));
 console.log('1839678117 : ', regex('phoneRegexp', '1839678117'));
 
 console.log('车架号: ', regex('carNumberRegexp', 'LHGTG2824K8024652'));
+console.log('车架号: ', regex('carNumberRegexp', 'LHGTG2824K8024652'))
 ```

@@ -120,7 +120,7 @@ const regexpMap = {
     return /^hsla\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*,\s*([01](\.\d+)?)\s*\)$/.test(
       text,
     );
-  },
+  }
 };
 
 export default regex;

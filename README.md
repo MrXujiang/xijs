@@ -45,8 +45,18 @@
   - isEmpty - 判断空对象
   - isPc - 判断设备类型
   - isPhone - 判断手机号格式
+  - isEmail - 判断邮箱函数
+  - isIdCard - 判断身份证格式函数
+  - lang - 判断中英文
+  - regexp - 常用正则表达式
 - 数据结构相关
   - cloneDeep - 数据深拷贝
+  - arrayToListNode - 数组转成链表
+  - linkListToArray - 链表结构转数组结构
+  - dateCalculate - 日期计算
+  - timeCutStr - 计算时间差
+  - timeSub - 计算时间间隔
+  - transformArray - 树结构转扁平数组
   - formatDate - 时间格式化
   - getRawType - 获取数据类型
   - obj2url - 将对象参数解析为url字符串
@@ -57,6 +67,7 @@
   - file2img - 文件转图片对象
   - hex2rgba - hex色值转rgba
   - rgba2obj - 将rgba值转化为rgba对象
+  - genRandomColor - 获取随机颜色
 - js高级函数
   - debounce - 防抖函数
   - parser - json超级解析器
@@ -70,10 +81,21 @@
   - difference - 创建一个排除指定项的数组
   - random - 返回区域内随机数
   - shuffle - 打乱数组
+  - factorial - 阶乘
+  - fibonacci - 计算斐波那契数
+  - sum - 求和数组
 - 几何计算
   - coordinatesInCircle - 生成圆内任意坐标
   - coordinatesInRect - 生成矩形内任意坐标
   - judgePointInCircle - 判断一点是否在圆内
+- dom操作
+  - downloadFileWithText - 下载文本文件
+  - downloadFileWithUrl - 下载链接文件
+  - $ - 通过id,class等获取dom
+  - getDomPageXY - 获取dom元素在当前文档中的绝对位置
+  - getDomScreenXY - 获取dom元素相对于screen绝对位置
+  - getDomText - 获取文本内容
+  - xss - 转义html标签
 
 ## API Doc
 
