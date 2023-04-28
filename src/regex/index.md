@@ -20,7 +20,6 @@ group:
 > fixPhone： 国内电话号码 <br>
 > idRegexp： 身份证号(15 位、18 位数字)<br>
 > ipv4Regexp： IPv4<br>
-> ipv6Regexp： IPv6<br>
 > chineseRegexp： 是否包含中文<br>
 > qqRegexp： 匹配 qq 号 腾讯 QQ 号从 10000 开始<br>
 > chinesePostcodeRegexp： 匹配中国邮政编码<br>
@@ -55,7 +54,4 @@ console.log('1839678117 : ', regex('phoneRegexp', '1839678117'));
 
 console.log('车架号: ', regex('carNumberRegexp', 'LHGTG2824K8024652'));
 console.log('车架号: ', regex('carNumberRegexp', 'LHGTG2824K8024652'))
-console.log('ipv6: ', regex('ipv6Regexp', '1030::C9B4:FF12:48AA:1A2B'))
-console.log('ipv6: ', regex('ipv6Regexp', 'AD80:0000:0000:0000:ABAA:0000:00C2:0002'))
-console.log('ipv6: ', regex('ipv6Regexp', ''))
 ```

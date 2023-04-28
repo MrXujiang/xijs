@@ -29,7 +29,6 @@ type IRegType =
   | 'rgbaRegexp'
   | 'numberRegexp'
   | 'hslRegexp'
-  | 'ipv6Regexp'
   | 'hslaRegexp';
 
 /**
@@ -121,14 +120,7 @@ const regexpMap = {
     return /^hsla\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*,\s*([01](\.\d+)?)\s*\)$/.test(
       text,
     );
-  },
-  // 匹配 IPv6 正则表达式
-  ipv6Regexp: (text: string): boolean => {
-    const test = text.match(/:/g);
-    return test ? test.length <= 7 : false
-      ? /^([\da-f]{1,4}(:|::)){1,6}[\da-f]{1,4}$/i.test(text)
-      : /^([\da-f]{1,4}:){7}[\da-f]{1,4}$/.test(text);
-  },
+  }
 };
 
 export default regex;
