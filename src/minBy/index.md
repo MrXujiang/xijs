@@ -1,5 +1,5 @@
 ---
-title: maxBy - 对象数组最小值
+title: minBy - 对象数组最小值
 nav:
   title: 使用文档
   path: /lib
@@ -9,7 +9,7 @@ group:
   order: 12
 ---
 
-## 对象数组最大值
+## 对象数组最小值
 
 > 判断对象数组的最小值返回一个最小值的对象
 
@@ -18,6 +18,6 @@ Demo:
 ```tsx | pure
 import { minBy } from 'xijs';
 
-const maxData = minBy([{ id: 1 }, { id: 2 }, { id: 3 }]);
-console.log(maxData); // -> { id: 1 }
+const minData = minBy([{ id: 1 }, { id: 2 }, { id: 3 }]);
+console.log(minData); // -> { id: 1 }
 ```
