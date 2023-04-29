@@ -26,7 +26,7 @@ group:
 
 Demo:
 
-```tsx | 
+```tsx | pure
 
 // 按需引入
 import { dataDesensitization } from 'xijs';
