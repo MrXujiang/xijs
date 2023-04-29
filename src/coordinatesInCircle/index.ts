@@ -15,7 +15,6 @@ function coordinatesInCircle(
 
     let pointX: number, pointY: number;
 
-    // eslint-disable-next-line no-constant-condition
     while (true) {
       // 生成大于等于 xValueRange[0]，小于等于 xValueRange[1] 的 x 坐标
       pointX =

@@ -6,6 +6,7 @@
   "useTabs": false,
   "semi": true,
   "bracketSpacing": true,
+  "endOfLine": "auto",
   "overrides": [
     {
       "files": ".prettierrc",
