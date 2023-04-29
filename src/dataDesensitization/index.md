@@ -22,7 +22,7 @@ group:
 > username： 姓名 脱敏<br>
 > custom： 自定义 脱敏<br>
 >
-> 返回值为 boolean 值，返回 true 则是满足校验规则， 返回 false 则是不满足校验规则
+> 返回值为 string 值，脱敏完的字符串
 
 Demo:
 
