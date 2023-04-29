@@ -65,3 +65,4 @@ export { default as downloadFileWithText } from './donwloadFileWithText';
 export { default as downloadFileWithUrl } from './downloadFileWithUrl';
 export { default as timeCutStr } from './timeCutStr';
 export { default as completeIp } from './completeIp';
+export { default as dataDesensitization } from './dataDesensitization';
