@@ -10,6 +10,7 @@ import {
   dateCalculate,
   timeSub,
   timeCutStr,
+  formDataToJson
 } from '../src/index';
 describe('数据结构相关测试', () => {
   test('数据深拷贝', () => {
@@ -269,4 +270,14 @@ describe('数据结构相关测试', () => {
     // 时间戳
     expect(timeCutStr(Date.now() + 1000)).toEqual('1秒后');
   });
+
+  test('表单数据转成JSON', () => {
+    const data = new FormData();
+    data.set('user', '1');
+    data.set('age', 29);
+    data.set('phone', '18329208292')
+    expect(formDataToJson(data)).toEqual('{"user":"1","age":"29","phone":"18329208292"}');
+    const data1 = new FormData();
+    expect(formDataToJson(data1)).toEqual('{}');
+  })
 });
