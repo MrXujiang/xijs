@@ -49,6 +49,7 @@
   - isIdCard - 判断身份证格式函数
   - lang - 判断中英文
   - regexp - 常用正则表达式
+  - dataDesensitization - 数据脱敏
 - 数据结构相关
   - cloneDeep - 数据深拷贝
   - arrayToListNode - 数组转成链表
@@ -62,6 +63,7 @@
   - obj2url - 将对象参数解析为url字符串
   - transformTree - 扁平转树结构
   - url2obj - url字符串转对象  
+  - bothLinkedList - 双向链表
 - 图片处理函数
   - compressImg - 自定义压缩图片函数
   - file2img - 文件转图片对象
