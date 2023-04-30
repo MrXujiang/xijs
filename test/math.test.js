@@ -6,6 +6,7 @@ import {
   factorial,
   fibonacci,
   sum,
+  capitalizedAmount,
 } from '../src/index';
 describe('数学计算相关测试', () => {
   test('计算数组平均值', () => {
@@ -65,5 +66,11 @@ describe('数学计算相关测试', () => {
     expect(fibonacci(1)).toBe(1);
     expect(fibonacci(4)).toBe(3);
     expect(fibonacci(10)).toBe(55);
+  });
+
+  test('金额转换', () => {
+    expect(capitalizedAmount(100000000)).toBe('壹亿元整');
+    expect(capitalizedAmount('2023.04')).toBe('贰仟零贰拾叁元肆分');
+    expect(capitalizedAmount(-1024)).toBe('欠壹仟零贰拾肆元整');
   });
 });
