@@ -15,7 +15,7 @@ group:
 
 Demo:
 
-```tsx | 
+```tsx | pure
 import { formDataToJson } from 'xijs';
 const data = new FormData();
 data.set('user', '1');
