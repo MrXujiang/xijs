@@ -74,3 +74,4 @@ export { default as capitalizedAmount } from './capitalizedAmount';
 
 export { default as dataDesensitization } from './dataDesensitization';
 export { default as BothLinkedList } from './BothLinkedList';
+export { default as XCookie } from './XCookie';
