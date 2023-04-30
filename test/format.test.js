@@ -14,24 +14,29 @@ import {
 describe('数据结构相关测试', () => {
   test('数据深拷贝', () => {
     const obj = {
-      a: 1,
-      b: '2',
+      a: 0,
+      b: "",
       c: true,
-      d: new Date(),
-      e: [1, '2', true],
-      f: {
-        aa: 2,
-        bb: {
-          aaa: 3,
-          bbb: [1, 2, 3],
-        },
+      d: undefined,
+      e: null,
+      f: { name: "我是一个对象", id: 1 },
+      obj: { name: '我是一个对象', id: 1 },
+      g: [0, 1, 2],
+      h: function () {
+        return '我是一个普通函数'
       },
-      g: function () {
-        return '对象里的普通函数';
+      i: () => {
+        return '我是一个箭头函数'
       },
-      h: () => {
-        return '对象里的箭头函数';
-      },
+      j: new Date(0),
+      k: new RegExp("/我是一个正则/ig"),
+      [Symbol("l")]: 1,
+      o: Symbol(123),
+      m: new WeakMap([[{ a: 1 }, 2]]),
+      n: new WeakSet([{ name: 'John' }, { name: 'asfdasd' }]),
+      p: new Map([['Michael', 95], ['Bob', 75], ['Tracy', 85]]),
+      q: new Set([{ 'Michael': 95 }, { 'Bob': 'Tracy' }]),
+      z: BigInt(19616811)
     };
     const copyObj = cloneDeep(obj);
     expect(obj).toEqual(copyObj);
@@ -57,7 +62,7 @@ describe('数据结构相关测试', () => {
       {},
       undefined,
       null,
-      function () {},
+      function () { },
       new Date(),
     ];
     const expectType = [
