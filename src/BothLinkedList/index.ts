@@ -42,7 +42,7 @@ class BothLinkedList<T> {
    */
   insertIndex(data: T, index: number): void {
     if (index < 0 || index > this.size) {
-      throw new Error("要插入的索引已经超过了链表的最大长度");
+      throw new Error('要插入的索引已经超过了链表的最大长度');
     }
     const node = new Node(data);
     /**
@@ -82,7 +82,7 @@ class BothLinkedList<T> {
    */
   deleteData(data: string): void {
     if (this.size === 0) {
-      throw Error("双向链表为空，不能删除")
+      throw Error('双向链表为空，不能删除');
     }
     let current = this.head!;
     while (current) {
@@ -114,7 +114,7 @@ class BothLinkedList<T> {
    */
   deleteFrom(index: number): void {
     if (index < 0 || index >= this.size) {
-      throw new Error("Index out of range");
+      throw new Error('Index out of range');
     }
     if (this.size === 1) {
       this.head = undefined;
@@ -163,7 +163,7 @@ class BothLinkedList<T> {
    */
   getData(index: number): T | undefined {
     if (index < 0 || index >= this.size) {
-      throw Error("要查找的索引已经超过了链表的最大长度")
+      throw Error('要查找的索引已经超过了链表的最大长度');
     }
     let current = this.head;
     for (let i = 0; i < index; i++) {
