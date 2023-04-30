@@ -64,5 +64,8 @@ export { default as regex } from './regex';
 export { default as downloadFileWithText } from './donwloadFileWithText';
 export { default as downloadFileWithUrl } from './downloadFileWithUrl';
 export { default as timeCutStr } from './timeCutStr';
+
 export { default as minBy } from './minBy';
 export { default as maxBy } from './maxBy';
+
+export { default as completeIp } from './completeIp';

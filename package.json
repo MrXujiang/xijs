@@ -27,7 +27,7 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "lint": "eslint . --ext .ts --fix",
+    "lint": "eslint src/**/*.ts --fix",
     "prepare": "husky install"
   },
   "main": "dist/index.js",
@@ -37,7 +37,7 @@
     "pre-commit": "yarn test"
   },
   "lint-staged": {
-    "*.{ts}": [
+    "*.ts": [
       "npm run lint"
     ]
   },
