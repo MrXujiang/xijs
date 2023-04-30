@@ -69,3 +69,5 @@ export { default as minBy } from './minBy';
 export { default as maxBy } from './maxBy';
 
 export { default as completeIp } from './completeIp';
+export { default as dataDesensitization } from './dataDesensitization';
+export { default as BothLinkedList } from './BothLinkedList';
