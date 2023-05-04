@@ -21,10 +21,11 @@ class XCookie {
     this.checkEnviroment();
 
     option = Object.assign({}, this.initOption, option);
-    let { path, domain, expires, maxAge, secure } = option;
+    let { path, domain, expires, maxAge } = option;
+    const { secure } = option;
     key = encodeURIComponent(key.trim());
     value = encodeURIComponent(value.trim());
-    let secureStr: string = '';
+    let secureStr = '';
 
     path = `; path=${path}`;
     domain && (domain = `; domain=${domain}`);
