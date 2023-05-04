@@ -114,7 +114,7 @@ class BothLinkedList<T> {
    */
   deleteFrom(index: number): void {
     if (index < 0 || index >= this.size) {
-      throw new Error('Index out of range');
+      throw new Error('双向链表越界');
     }
     if (this.size === 1) {
       this.head = undefined;
