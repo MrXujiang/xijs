@@ -35,11 +35,41 @@ npm install xijs
 
 ### 贡献者
 
-<table style="width:360px">
+<table style="width:100%">
   <tr>
     <td width="80" align="center">
       <a target="_blank" href="https://github.com/MrXujiang">
         <img src="https://avatars.githubusercontent.com/u/28833634?v=4" width="80" style="border-radius:6px" />
+      </a>
+    </td>
+    <td width="80" align="center">
+      <a target="_blank" href="https://github.com/bigFace2019">
+        <strong>bigFace2019</strong>
+      </a>
+    </td>
+    <td width="80" align="center">
+      <a target="_blank" href="https://github.com/EasyRo">
+        <strong>EasyRo</strong>
+      </a>
+    </td>
+    <td width="80" align="center">
+      <a target="_blank" href="https://github.com/wujixialan">
+        <strong>wujixialan</strong>
+      </a>
+    </td>
+    <td width="80" align="center">
+      <a target="_blank" href="https://github.com/WangLei802">
+        <strong>WangLei802</strong>
+      </a>
+    </td>
+    <td width="80" align="center">
+      <a target="_blank" href="https://github.com/ayangweb">
+        <strong>ayangweb</strong>
+      </a>
+    </td>
+    <td width="80" align="center">
+      <a target="_blank" href="https://github.com/zhengsixsix">
+        <strong>zhengsixsix</strong>
       </a>
     </td>
     <td width="80" align="center">

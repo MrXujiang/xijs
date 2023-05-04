@@ -1,3 +1,5 @@
+// import pageTrack from 'src/formDataToJson';
+
 export { default as parser } from './parser';
 export { default as store } from './store';
 export { default as uuid } from './uuid';
@@ -65,8 +67,8 @@ export { default as downloadFileWithText } from './donwloadFileWithText';
 export { default as downloadFileWithUrl } from './downloadFileWithUrl';
 export { default as timeCutStr } from './timeCutStr';
 
-export { default as minBy } from './minBy';
-export { default as maxBy } from './maxBy';
+// export { default as minBy } from './minBy';
+// export { default as maxBy } from './maxBy';
 
 export { default as completeIp } from './completeIp';
 

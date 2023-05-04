@@ -4,8 +4,8 @@ nav:
   title: 使用文档
   path: /lib
 group:
-  path: /format
-  title: 数据结构相关
+  path: /string
+  title: 字符串操作
   order: 2
 ---
 
