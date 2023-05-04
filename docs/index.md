@@ -63,6 +63,11 @@ npm install xijs
       </a>
     </td>
     <td width="80" align="center">
+      <a target="_blank" href="https://github.com/ayangweb">
+        <strong>ayangweb</strong>
+      </a>
+    </td>
+    <td width="80" align="center">
       <a target="_blank" href="http://cdn.dooring.cn/dr/lowcode.jpeg">
         <strong>期待加入</strong>
       </a>

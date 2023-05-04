@@ -265,6 +265,6 @@ describe('数据结构相关测试', () => {
     // 时间戳字符串
     expect(timeCutStr(String(oneSecondAgo))).toEqual('1秒前');
     // 时间戳
-    expect(timeCutStr(oneSecondLater)).toEqual('1秒后');
+    expect(timeCutStr(Date.now() + 1000)).toEqual('1秒后');
   });
 });
