@@ -23,6 +23,7 @@ Demo:
 
 ```tsx | pure
 import { downloadFileWithUrl } from 'xijs';
+
 // 请求链接为 url 的文件
 downloadFileWithUrl('url', 'xxx.xx');
 ```

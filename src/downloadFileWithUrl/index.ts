@@ -3,7 +3,7 @@
  * @param url 下载链接
  * @param fileName 文件名
  */
-function downloadFileWithUrl(url: string, fileName: string = '') {
+function downloadFileWithUrl(url: string, fileName = '') {
   if (!fileName) {
     const urlArr: string[] = url.split('/');
     fileName = urlArr[urlArr.length - 1];

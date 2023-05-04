@@ -10,28 +10,34 @@ import {
   dateCalculate,
   timeSub,
   timeCutStr,
+  formDataToJson
 } from '../src/index';
 describe('数据结构相关测试', () => {
   test('数据深拷贝', () => {
     const obj = {
-      a: 1,
-      b: '2',
+      a: 0,
+      b: "",
       c: true,
-      d: new Date(),
-      e: [1, '2', true],
-      f: {
-        aa: 2,
-        bb: {
-          aaa: 3,
-          bbb: [1, 2, 3],
-        },
+      d: undefined,
+      e: null,
+      f: { name: "我是一个对象", id: 1 },
+      obj: { name: '我是一个对象', id: 1 },
+      g: [0, 1, 2],
+      h: function () {
+        return '我是一个普通函数'
       },
-      g: function () {
-        return '对象里的普通函数';
+      i: () => {
+        return '我是一个箭头函数'
       },
-      h: () => {
-        return '对象里的箭头函数';
-      },
+      j: new Date(0),
+      k: new RegExp("/我是一个正则/ig"),
+      [Symbol("l")]: 1,
+      o: Symbol(123),
+      m: new WeakMap([[{ a: 1 }, 2]]),
+      n: new WeakSet([{ name: 'John' }, { name: 'asfdasd' }]),
+      p: new Map([['Michael', 95], ['Bob', 75], ['Tracy', 85]]),
+      q: new Set([{ 'Michael': 95 }, { 'Bob': 'Tracy' }]),
+      z: BigInt(19616811)
     };
     const copyObj = cloneDeep(obj);
     expect(obj).toEqual(copyObj);
@@ -57,7 +63,7 @@ describe('数据结构相关测试', () => {
       {},
       undefined,
       null,
-      function () {},
+      function () { },
       new Date(),
     ];
     const expectType = [
@@ -256,15 +262,22 @@ describe('数据结构相关测试', () => {
 
   test('计算时间差', () => {
     // 计算与当前时间的时间差
-    const now = +new Date();
-    const oneSecondAgo = now - 1000;
-    const oneSecondLater = now + 1000;
 
     // 格式化的时间字符串
-    expect(timeCutStr(formatDate(now))).toEqual('刚刚');
+    expect(timeCutStr(formatDate(Date.now()))).toEqual('刚刚');
     // 时间戳字符串
-    expect(timeCutStr(String(oneSecondAgo))).toEqual('1秒前');
+    expect(timeCutStr(String(Date.now() - 1000))).toEqual('1秒前');
     // 时间戳
     expect(timeCutStr(Date.now() + 1000)).toEqual('1秒后');
   });
+
+  test('表单数据转成JSON', () => {
+    const data = new FormData();
+    data.set('user', '1');
+    data.set('age', 29);
+    data.set('phone', '18329208292')
+    expect(formDataToJson(data)).toEqual('{"user":"1","age":"29","phone":"18329208292"}');
+    const data1 = new FormData();
+    expect(formDataToJson(data1)).toEqual('{}');
+  })
 });

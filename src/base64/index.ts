@@ -63,7 +63,7 @@ const base64 = {
     e = e.replace(/rn/g, 'n');
     let t = '';
     for (let n = 0; n < e.length; n++) {
-      let r = e.charCodeAt(n);
+      const r = e.charCodeAt(n);
       if (r < 128) {
         t += String.fromCharCode(r);
       } else if (r > 127 && r < 2048) {

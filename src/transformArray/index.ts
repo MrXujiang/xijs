@@ -4,7 +4,7 @@
  * @returns 扁平数组
  */
 
-function transformArray(tree: any[] = [], childField: string = 'children') {
+function transformArray(tree: any[] = [], childField = 'children') {
   // 层序遍历
   const treeNodes: any[] = [];
   const res: any[] = [];

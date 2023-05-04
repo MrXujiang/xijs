@@ -10,13 +10,13 @@ interface ListNode<T> {
 }
 
 const arrayToListNode = <T>(arr: Array<T>): ListNode<T> | undefined => {
-  let len = arr.length;
+  const len = arr.length;
   if (!len) {
     return undefined;
   }
   let node: ListNode<T> = {
     data: arr[len - 1],
-  }
+  };
   for (let i = len - 2; i >= 0; i--) {
     node = {
       data: arr[i],
@@ -24,5 +24,5 @@ const arrayToListNode = <T>(arr: Array<T>): ListNode<T> | undefined => {
     };
   }
   return node;
-}
+};
 export default arrayToListNode;
