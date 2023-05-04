@@ -1,3 +1,5 @@
+import pageTrack from 'src/formDataToJson';
+
 export { default as parser } from './parser';
 export { default as store } from './store';
 export { default as uuid } from './uuid';
@@ -74,4 +76,7 @@ export { default as capitalizedAmount } from './capitalizedAmount';
 
 export { default as dataDesensitization } from './dataDesensitization';
 export { default as BothLinkedList } from './BothLinkedList';
+
 export { default as XCookie } from './XCookie';
+
+export { default as formDataToJson } from './formDataToJson';
