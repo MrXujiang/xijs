@@ -80,7 +80,7 @@ class BothLinkedList<T> {
   /**
    * 删除元素(根据元素值进行删除)
    */
-  deleteData(data: string): void {
+  deleteData(data: T): void {
     if (this.size === 0) {
       throw Error('双向链表为空，不能删除');
     }

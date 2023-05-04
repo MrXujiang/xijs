@@ -6,8 +6,7 @@
  * @FilePath: \xijs\test\browser.test.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
-import { store, sleep } from '../src/index';
-import { $, getDomText } from '../src/index';
+import { store, sleep, $, getDomText, XCookie } from '../src/index';
 
 function renderHtml() {
   const div = document.createElement('div');
@@ -41,5 +40,27 @@ describe('浏览器相关测试', () => {
     expect(getDomText('#domId')).toBe(
       'this id domIdHello Worldthis id div onethis id div two',
     );
+  });
+
+  test('增加，删除，获取所有 cookie 的操作', async () => {
+    const key = 'foo',
+      value = 'bar';
+    XCookie.set(key, value, { maxAge: 3 });
+    expect(XCookie.get(key)).toBe(value);
+    await sleep(3000);
+    expect(XCookie.get(key)).toBe('');
+
+    const cookies = {
+      foo: 'bar',
+      foo1: 'bar1',
+      foo2: 'bar2',
+    };
+    for (const key in cookies) {
+      XCookie.set(key, cookies[key]);
+    }
+    XCookie.remove('foo');
+    Reflect.deleteProperty(cookies, 'foo');
+
+    expect(XCookie.allCookies()).toEqual(cookies);
   });
 });
