@@ -25,7 +25,7 @@ group:
 
 Demo:
 
-```tsx | 
+```tsx | pure
 import { BinaryTree } from 'xijs';
 const bt = new BinaryTree();
 bt.insert(1);
