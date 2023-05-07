@@ -80,3 +80,4 @@ export { default as BothLinkedList } from './BothLinkedList';
 export { default as XCookie } from './XCookie';
 
 export { default as formDataToJson } from './formDataToJson';
+export { default as BinaryTree } from './BinaryTree';
