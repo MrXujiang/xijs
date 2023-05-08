@@ -1,0 +1,3 @@
+{
+    "jestrunner.jestPath": "node_modules/@umijs/test/bin/umi-test.js"
+}

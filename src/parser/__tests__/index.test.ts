@@ -1,4 +1,4 @@
-import { parser } from '../src/index';
+import parser from '../index';
 
 function compareObj(obj, otherObj) {
   for (const key in obj) {
@@ -13,7 +13,7 @@ function compareObj(obj, otherObj) {
   return true;
 }
 
-describe('js 高级函数相关测试', () => {
+describe('parser', () => {
   test('json 超级解析器', async () => {
     const obj = {
       a: 1,

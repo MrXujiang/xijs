@@ -1,6 +1,6 @@
-import { xss } from '../src/index';
+import xss from '../index';
 
-describe('Dom 操作相关测试', () => {
+describe('xss', () => {
   test('xss - 转义html标签', () => {
     let html = '<a href="#">Me & you</a>';
     expect(xss(html)).toBe(

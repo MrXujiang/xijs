@@ -1,6 +1,6 @@
-import { bubbleSort, quickSort } from '../src/index';
+import bubbleSort from '../index';
 
-describe('排序相关测试', () => {
+describe('bubbleSort', () => {
   let arr = [1, 4, 2, 3];
   let objArr = [
     { name: '8', age: 18 },
@@ -27,9 +27,5 @@ describe('排序相关测试', () => {
     expect(bubbleSort(arr, '', 'desc')).toStrictEqual(arrDesc);
     expect(bubbleSort(objArr, 'age')).toStrictEqual(objArrAsc);
     expect(bubbleSort(objArr, 'age', 'desc')).toStrictEqual(objArrDesc);
-  });
-  test('快速排序', () => {
-    expect(quickSort(arr)).toStrictEqual(arrAsc);
-    expect(quickSort(objArr, 'age')).toStrictEqual(objArrAsc);
   });
 });

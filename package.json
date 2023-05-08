@@ -50,6 +50,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
+    "@types/jest": "^29.5.1",
     "@types/lodash.clonedeep": "^4.5.6",
     "@types/lodash.difference": "^4.5.7",
     "@types/qs": "^6.9.7",

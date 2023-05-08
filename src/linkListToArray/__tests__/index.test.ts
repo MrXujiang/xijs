@@ -1,6 +1,6 @@
-import { linkListToArray } from '../src/index';
+import linkListToArray from '../index';
 
-describe('链表相关测试', () => {
+describe('linkListToArray', () => {
   test('链表结构转换为数组结构', () => {
     const linkList = {
       value: 100,
