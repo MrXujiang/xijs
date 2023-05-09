@@ -7,6 +7,10 @@ import {
   fibonacci,
   sum,
   capitalizedAmount,
+  floatAdd,
+  floatDiv,
+  floatMul,
+  floatSub
 } from '../src/index';
 describe('数学计算相关测试', () => {
   test('计算数组平均值', () => {
@@ -72,5 +76,71 @@ describe('数学计算相关测试', () => {
     expect(capitalizedAmount(100000000)).toBe('壹亿元整');
     expect(capitalizedAmount('2023.04')).toBe('贰仟零贰拾叁元肆分');
     expect(capitalizedAmount(-1024)).toBe('欠壹仟零贰拾肆元整');
+  });
+  describe('Correct floating-point calculation', () => {
+    test('Computes floating-point precision addition', () => {
+      expect(floatAdd(0.1, 0.2)).toEqual(0.3);
+      expect(floatAdd(1, 2)).toEqual(3);
+      expect(floatAdd(1, 1.2)).toEqual(2.2);
+      expect(floatAdd(1.2, 1)).toEqual(2.2);
+    });
+    test('Computes floating-point precision subtraction', () => {
+      expect(floatSub(0.4, 0.1)).toEqual(0.3);
+      expect(floatSub(0.1, 0.4)).toEqual(-0.3);
+      expect(floatSub(3, 1)).toEqual(2);
+      expect(floatSub(1.2, 1)).toEqual(0.2);
+      expect(floatSub(1, 0.8)).toEqual(0.2);
+    });
+    test('Calculate floating-point precision division', () => {
+      expect(floatDiv(10.44, 100)).toEqual(0.1044);
+      expect(floatDiv(100, 1)).toEqual(100);
+      expect(floatDiv(1, 10000000000)).toEqual(0.0000000001);
+      expect(floatDiv(85, 85)).toEqual(1);
+      expect(floatDiv(1, 3)).toEqual(0.3333333333333333);
+    });
+    test('Computes floating-point precision multiplication', () => {
+      expect(floatMul(1.255, 100)).toEqual(125.5);
+      expect(floatMul(1.2555555555, 1.2555555555555)).toEqual(
+        1.576419753016597,
+      );
+      expect(floatMul(floatDiv(1, 3), 100)).toEqual(33.33333333333333);
+      expect(floatMul(0, 0)).toEqual(0);
+      expect(floatMul(1, 0)).toEqual(0);
+    });
+  });
+
+  describe('Incorrect floating-point calculation', () => {
+    test('Computes floating-point precision addition', () => {
+      const spy = jest.spyOn(console, 'warn');
+      expect(floatAdd()).toBeNaN();
+      expect(floatAdd('1', '2')).toBeNaN();
+      expect(floatAdd(null, undefined)).toBeNaN();
+      expect(spy).toBeCalledWith('Please pass in the number type');
+      spy.mockRestore();
+    });
+    test('Computes floating-point precision subtraction', () => {
+      const spy = jest.spyOn(console, 'warn');
+      expect(floatSub(floatSub())).toBeNaN();
+      expect(floatSub(floatSub('1', '2'))).toBeNaN();
+      expect(floatSub(floatSub(null, undefined))).toBeNaN();
+      expect(spy).toBeCalledWith('Please pass in the number type');
+      spy.mockRestore();
+    });
+    test('Calculate floating-point precision division', () => {
+      const spy = jest.spyOn(console, 'warn');
+      expect(floatDiv()).toBeNaN();
+      expect(floatDiv('1', '2')).toBeNaN();
+      expect(floatDiv(null, undefined)).toBeNaN();
+      expect(spy).toBeCalledWith('Please pass in the number type');
+      spy.mockRestore();
+    });
+    test('Computes floating-point precision multiplication', () => {
+      const spy = jest.spyOn(console, 'warn');
+      expect(floatMul()).toBeNaN();
+      expect(floatMul('1', '2')).toBeNaN();
+      expect(floatMul(null, undefined)).toBeNaN();
+      expect(spy).toBeCalledWith('Please pass in the number type');
+      spy.mockRestore();
+    });
   });
 });
