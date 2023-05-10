@@ -34,3 +34,4 @@ nav:
 `2023-5-9`
 
 -   ✨ 添加了xxx方法
+- 添加 arrayRepeat 方法

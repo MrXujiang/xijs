@@ -10,7 +10,8 @@ import {
   floatAdd,
   floatDiv,
   floatMul,
-  floatSub
+  floatSub,
+  arrayRepeat
 } from '../src/index';
 describe('数学计算相关测试', () => {
   test('计算数组平均值', () => {
@@ -141,6 +142,14 @@ describe('数学计算相关测试', () => {
       expect(floatMul(null, undefined)).toBeNaN();
       expect(spy).toBeCalledWith('Please pass in the number type');
       spy.mockRestore();
+    });
+  });
+
+  describe('计算数组中重复元素以及重复元素的次数', () => {
+    test('array 元素 重复', () => {
+      expect(arrayRepeat(['1', '2', '1'])).toEqual({1: 2, 2: 1})
+      expect(arrayRepeat([1, 2, 3, 2, 4, 5, 1])).toEqual({1: 2, 2: 2, 3: 1, 4: 1, 5: 1})
+      expect(arrayRepeat([true, false, false, true, true, true, false])).toEqual({true: 4, false: 3})
     });
   });
 });
