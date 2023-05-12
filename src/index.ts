@@ -67,16 +67,22 @@ export { default as downloadFileWithText } from './donwloadFileWithText';
 export { default as downloadFileWithUrl } from './downloadFileWithUrl';
 export { default as timeCutStr } from './timeCutStr';
 
-// export { default as minBy } from './minBy';
-// export { default as maxBy } from './maxBy';
+export { default as minBy } from './minBy';
+export { default as maxBy } from './maxBy';
 
 export { default as completeIp } from './completeIp';
 
 export { default as capitalizedAmount } from './capitalizedAmount';
 
 export { default as dataDesensitization } from './dataDesensitization';
-// export { default as BothLinkedList } from './BothLinkedList';
+export { default as BothLinkedList } from './BothLinkedList';
 
 export { default as XCookie } from './XCookie';
 
 export { default as formDataToJson } from './formDataToJson';
+export { default as BinaryTree } from './BinaryTree';
+
+export { default as floatAdd } from './floatAdd';
+export { default as floatDiv } from './floatDiv';
+export { default as floatMul } from './floatMul';
+export { default as floatSub } from './floatSub';

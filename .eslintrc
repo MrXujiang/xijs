@@ -20,7 +20,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "no-constant-condition": "off",
     "@typescript-eslint/no-this-alias": "off",
-    "prefer-const": "off",
+    "prefer-const": "off"
   },
   "ignorePatterns": ["**/*.test.js"]
 }
