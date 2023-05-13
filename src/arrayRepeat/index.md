@@ -17,6 +17,8 @@ Demo:
 
 ```tsx | pure
 import { arrayRepeat } from 'xijs';
-const arr = ['1', '2', '1', 1, 2, 3, 2, 4, 5, 1]
-console.log("" + arr +": ", arrayRepeat(arr))
+const arr = ['1', '2', '1', 1, 2, {a: 1, b: 2}, {a: 1, b: 3}, {a: 1, b: 2, c: 3}, {b: 2, c: 3, a: 1}, {c: 3, b: 2, a: 1}, {a: 1, b: 2}, {a: 1, c: 'w', b: 2}, {a: 1, b: 2, c: 'w'}]
+console.log(arrayRepeat(arr)) // {"1":1,"2":1,""1"":2,""2"":1,"{"a":1,"b":2}":2,"{"a":1,"b":3}":1,"{"a":1,"b":2,"c":3}":3,"{"a":1,"c":"w","b":2}":2}
+console.log(arrayRepeat([{ 1: 1 }, {a: 1, b: 2, c: 3}, {b: 2, c: 3, a: 1}, {c: 3, b: 2, a: 1}]))
+console.log(arrayRepeat([{b: 2, a: 1}]))
 ```
