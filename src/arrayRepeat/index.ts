@@ -7,7 +7,7 @@ const objConst = '[object Object]';
  * @param data
  */
 const arrayRepeat = <T>(data: Array<T>): object => {
-  let res = {} as any;
+  let res: Record<any, any> = {};
   let flag = true;
   data.forEach((ele) => {
     const type = Object.prototype.toString.call(ele);
