@@ -7,7 +7,8 @@ import {
   lang,
   regex,
   minBy,
-  maxBy
+  maxBy,
+  isObjEqual,
 } from '../src/index';
 
 describe('常用判断函数相关测试', () => {
@@ -80,5 +81,10 @@ describe('常用判断函数相关测试', () => {
     expect({ id: 'b' }).toEqual(StringMin)
     expect({ id: '我' }).toEqual(ChartMin)
     expect({ id: '我' }).toEqual(StringNumberMin)
+  })
+
+  test('判断两个对象是否相等', () => {
+    expect(isObjEqual({a: 1, b: 2, c: {d: 222}}, {b: 2, c: {d: 222}, a: 1})).toEqual(true)
+    expect(isObjEqual({a: 1, b: 2, c: {d: 222}}, {b: 2, c: {d: 222}})).toEqual(false)
   })
 });

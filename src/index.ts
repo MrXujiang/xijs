@@ -86,4 +86,7 @@ export { default as floatAdd } from './floatAdd';
 export { default as floatDiv } from './floatDiv';
 export { default as floatMul } from './floatMul';
 export { default as floatSub } from './floatSub';
+
+export { default as arrayRepeat } from './arrayRepeat';
+export { default as isObjEqual } from './isObjEqual';
 export { default as getRepeatCharacter } from './getRepeatCharacter';
