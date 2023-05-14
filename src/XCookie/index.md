@@ -48,9 +48,9 @@ group:
 Demo:
 
 ```tsx | pure
-import { XCookie } from 'xijs';
+import { xCookie } from 'xijs';
 // 设置 cookie,
-XCookie.set('foo', 'bar', {
+xCookie.set('foo', 'bar', {
   path: './',
   maxAge: 10,
   secure: true,
@@ -58,13 +58,13 @@ XCookie.set('foo', 'bar', {
   expires: 'Wed, 21 Oct 2023 07:28:00 GMT',
 });
 // 获取 cookie
-XCookie.get('foo'); // bar
+xCookie.get('foo'); // bar
 // 删除 cookie
-XCookie.remove('foo');
-XCookie.get('foo'); // ''
+xCookie.remove('foo');
+xCookie.get('foo'); // ''
 
 // 获取所有 cookie
-XCookie.set('foo', 'bar');
-XCookie.set('foo1', 'bar1');
-XCookie.allCookies(); // {foo: 'bar', foo1: 'bar1'}
+xCookie.set('foo', 'bar');
+xCookie.set('foo1', 'bar1');
+xCookie.allCookies(); // {foo: 'bar', foo1: 'bar1'}
 ```
