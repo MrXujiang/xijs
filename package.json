@@ -15,7 +15,11 @@
     "徐小夕",
     "wujixialan",
     "EasyRo",
-    "bigFace2019"
+    "bigFace2019",
+    "kevin",
+    "20savage",
+    "MrYeZiqing",
+    "WangLei802"
   ],
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && dumi dev",
