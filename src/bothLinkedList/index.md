@@ -1,5 +1,5 @@
 ---
-title: bothLinkedList - 双向链表
+title: BothLinkedList - 双向链表
 nav:
   title: 使用文档
   path: /lib
@@ -9,7 +9,7 @@ group:
   order: 2
 ---
 
-## bothLinkedList
+## BothLinkedList
 
 > 双向链表
 >
