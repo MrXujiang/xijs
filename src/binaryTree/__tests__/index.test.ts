@@ -47,8 +47,8 @@ describe('BinaryTree', () => {
     bt.preOrderTraversal(bt.getRoot());
     bt.centerOrderTraversal(bt.getRoot());
     bt.postOrderTraversal(bt.getRoot());
-    expect(bt.getRoot().preOrder).toEqual([0, 1, 2]);
-    expect(bt.getRoot().centerOrder).toEqual([1, 0, 2]);
-    expect(bt.getRoot().postOrder).toEqual([0, 2, 1]);
+    expect(bt.getRoot()!.preOrder).toEqual([0, 1, 2]);
+    expect(bt.getRoot()!.centerOrder).toEqual([1, 0, 2]);
+    expect(bt.getRoot()!.postOrder).toEqual([0, 2, 1]);
   });
 });
