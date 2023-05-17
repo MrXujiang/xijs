@@ -18,6 +18,6 @@ Demo:
 ```tsx | pure
 import { maxBy } from 'xijs';
 
-const maxData = maxBy([{ id: 1 }, { id: 2 }, { id: 3 }]);
+const maxData = maxBy([{ id: 1 }, { id: 2 }, { id: 3 }], 'id');
 console.log(maxData); // -> { id: 3 }
 ```
