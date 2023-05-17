@@ -75,12 +75,12 @@ export { default as completeIp } from './completeIp';
 export { default as capitalizedAmount } from './capitalizedAmount';
 
 export { default as dataDesensitization } from './dataDesensitization';
-export { default as BothLinkedList } from './BothLinkedList';
+export { default as BothLinkedList } from './bothLinkedList';
 
-export { default as XCookie } from './XCookie';
+export { default as xCookie } from './xCookie';
 
 export { default as formDataToJson } from './formDataToJson';
-export { default as BinaryTree } from './BinaryTree';
+export { default as binaryTree } from './binaryTree';
 
 export { default as floatAdd } from './floatAdd';
 export { default as floatDiv } from './floatDiv';
@@ -90,4 +90,7 @@ export { default as floatSub } from './floatSub';
 export { default as arrayRepeat } from './arrayRepeat';
 export { default as isObjEqual } from './isObjEqual';
 export { default as getRepeatCharacter } from './getRepeatCharacter';
+
 export { default as calculateMemory } from './calculateMemory';
+
+export { default as designateRepeat } from './designateRepeat';

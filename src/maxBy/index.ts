@@ -1,11 +1,16 @@
-function maxBy(array: object[] | null, iteratee: (value: object) => unknown) {
-  let result;
+type MAXBY = { [key: string]: any } | undefined;
+
+function maxBy(array: MAXBY[] | null, key: string): MAXBY {
+  let result: MAXBY = undefined;
   if (array == null) {
     return result;
-  } else if (array != null && array.length === 0) {
+  } else if (array.length === 0) {
     return result;
   }
-  let computed;
+  const iteratee = (value: MAXBY) => {
+    return value ? value[key] : undefined;
+  };
+  let computed: any;
   for (const value of array) {
     const current = iteratee(value);
     if (
@@ -20,18 +25,24 @@ function maxBy(array: object[] | null, iteratee: (value: object) => unknown) {
   }
   return result;
 }
-function getTag(value: any) {
+
+function getTag(value: any): string {
   const toString = Object.prototype.toString;
-  if (value == null) {
-    return value === undefined ? '[object Undefined]' : '[object Null]';
+  if (value === null) {
+    return '[object Null]';
+  }
+  if (value === undefined) {
+    return '[object Undefined]';
   }
   return toString.call(value);
 }
-function isSymbol(value: any) {
+
+function isSymbol(value: any): boolean {
   const type = typeof value;
   return (
-    type == 'symbol' ||
-    (type === 'object' && value != null && getTag(value) === '[object Symbol]')
+    type === 'symbol' ||
+    (type === 'object' && value !== null && getTag(value) === '[object Symbol]')
   );
 }
+
 export default maxBy;

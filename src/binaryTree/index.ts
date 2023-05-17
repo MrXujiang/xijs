@@ -167,7 +167,7 @@ class BinaryTree<T> {
    * 先序遍历，遍历结束之后，可以通过 bt.getRoot().preOrder 获取遍历以后的元素数组
    * @param root
    */
-  preOrderTraversal(root: TreeNode<T>) {
+  preOrderTraversal(root: TreeNode<T> | undefined) {
     if (root === undefined) {
       return undefined;
     }
@@ -180,7 +180,7 @@ class BinaryTree<T> {
    * 中序遍历，遍历结束之后，可以通过 bt.getRoot().centerOrder 获取遍历以后的元素数组
    * @param root
    */
-  centerOrderTraversal(root: TreeNode<T>) {
+  centerOrderTraversal(root: TreeNode<T> | undefined) {
     if (root === undefined) {
       return undefined;
     }
@@ -193,7 +193,7 @@ class BinaryTree<T> {
    * 后序遍序遍历，遍历结束之后，可以通过 bt.getRoot().postOrder 获取遍历以后的元素数组
    * @param root
    */
-  postOrderTraversal(root: TreeNode<T>) {
+  postOrderTraversal(root: TreeNode<T> | undefined) {
     if (root === undefined) {
       return undefined;
     }
@@ -203,4 +203,4 @@ class BinaryTree<T> {
   }
 }
 
-export default BinaryTree;
+export default new BinaryTree();
