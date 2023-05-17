@@ -36,3 +36,4 @@ nav:
 -   ✨ 添加了xxx方法
 - 添加 arrayRepeat 方法
 - 添加 isObjEqual 方法
+- 添加 designateRepeat 方法
