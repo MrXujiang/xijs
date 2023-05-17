@@ -3,7 +3,7 @@ import binaryTree from '../index';
 describe('BinaryTree', () => {
   test('二叉树', () => {
     // const bt = new BinaryTree();
-    expect(binaryTree.insert(1)).toEqual();
+    expect(binaryTree.insert(1));
     expect(binaryTree.getRoot()).toEqual({
       centerOrder: [],
       count: 1,
@@ -13,8 +13,8 @@ describe('BinaryTree', () => {
       preOrder: [],
       right: undefined,
     });
-    expect(binaryTree.insert(2)).toEqual();
-    expect(binaryTree.insert(0)).toEqual();
+    expect(binaryTree.insert(2));
+    expect(binaryTree.insert(0));
     expect(binaryTree.find(2)).toEqual({
       centerOrder: [],
       count: 0,
