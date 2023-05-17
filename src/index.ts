@@ -90,3 +90,4 @@ export { default as floatSub } from './floatSub';
 export { default as arrayRepeat } from './arrayRepeat';
 export { default as isObjEqual } from './isObjEqual';
 export { default as getRepeatCharacter } from './getRepeatCharacter';
+export { default as calculateMemory } from './calculateMemory';
