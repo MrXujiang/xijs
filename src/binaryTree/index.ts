@@ -203,4 +203,4 @@ class BinaryTree<T> {
   }
 }
 
-export default BinaryTree;
+export default new BinaryTree();

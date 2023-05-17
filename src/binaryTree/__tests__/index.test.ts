@@ -1,10 +1,10 @@
-import BinaryTree from '../index';
+import binaryTree from '../index';
 
 describe('BinaryTree', () => {
   test('二叉树', () => {
-    const bt = new BinaryTree();
-    expect(bt.insert(1)).toEqual();
-    expect(bt.getRoot()).toEqual({
+    // const bt = new BinaryTree();
+    expect(binaryTree.insert(1)).toEqual();
+    expect(binaryTree.getRoot()).toEqual({
       centerOrder: [],
       count: 1,
       data: 1,
@@ -13,9 +13,9 @@ describe('BinaryTree', () => {
       preOrder: [],
       right: undefined,
     });
-    expect(bt.insert(2)).toEqual();
-    expect(bt.insert(0)).toEqual();
-    expect(bt.find(2)).toEqual({
+    expect(binaryTree.insert(2)).toEqual();
+    expect(binaryTree.insert(0)).toEqual();
+    expect(binaryTree.find(2)).toEqual({
       centerOrder: [],
       count: 0,
       data: 2,
@@ -24,7 +24,7 @@ describe('BinaryTree', () => {
       preOrder: [],
       right: undefined,
     });
-    expect(bt.getMinNode(bt.getRoot())).toEqual({
+    expect(binaryTree.getMinNode(binaryTree.getRoot())).toEqual({
       centerOrder: [],
       count: 0,
       data: 0,
@@ -33,7 +33,7 @@ describe('BinaryTree', () => {
       preOrder: [],
       right: undefined,
     });
-    expect(bt.getMaxNode(bt.getRoot())).toEqual({
+    expect(binaryTree.getMaxNode(binaryTree.getRoot())).toEqual({
       centerOrder: [],
       count: 0,
       data: 2,
@@ -42,13 +42,13 @@ describe('BinaryTree', () => {
       preOrder: [],
       right: undefined,
     });
-    expect(bt.removeNode(2)).toEqual(undefined);
-    bt.insert(2);
-    bt.preOrderTraversal(bt.getRoot());
-    bt.centerOrderTraversal(bt.getRoot());
-    bt.postOrderTraversal(bt.getRoot());
-    expect(bt.getRoot()!.preOrder).toEqual([0, 1, 2]);
-    expect(bt.getRoot()!.centerOrder).toEqual([1, 0, 2]);
-    expect(bt.getRoot()!.postOrder).toEqual([0, 2, 1]);
+    expect(binaryTree.removeNode(2)).toEqual(undefined);
+    binaryTree.insert(2);
+    binaryTree.preOrderTraversal(binaryTree.getRoot());
+    binaryTree.centerOrderTraversal(binaryTree.getRoot());
+    binaryTree.postOrderTraversal(binaryTree.getRoot());
+    expect(binaryTree.getRoot()!.preOrder).toEqual([0, 1, 2]);
+    expect(binaryTree.getRoot()!.centerOrder).toEqual([1, 0, 2]);
+    expect(binaryTree.getRoot()!.postOrder).toEqual([0, 2, 1]);
   });
 });
