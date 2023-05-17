@@ -6,18 +6,10 @@ describe('minBy', () => {
     const StringArr = [{ id: 'A' }, { id: 'a' }, { id: 'b' }];
     const ChartArr = [{ id: '我' }, { id: '你' }, { id: '他' }];
     const StringNumberarr = [{ id: '我' }, { id: 2 }, { id: '1' }];
-    const NumberMin = minBy(NumberArr, (arr) => {
-      return arr.id;
-    });
-    const StringMin = minBy(StringArr, (arr) => {
-      return arr.id;
-    });
-    const ChartMin = minBy(ChartArr, (arr) => {
-      return arr.id;
-    });
-    const StringNumberMin = minBy(StringNumberarr, (arr) => {
-      return arr.id;
-    });
+    const NumberMin = minBy(NumberArr, 'id');
+    const StringMin = minBy(StringArr, 'id');
+    const ChartMin = minBy(ChartArr, 'id');
+    const StringNumberMin = minBy(StringNumberarr, 'id');
     expect({ id: 1 }).toEqual(NumberMin);
     expect({ id: 'A' }).toEqual(StringMin);
     expect({ id: '他' }).toEqual(ChartMin);

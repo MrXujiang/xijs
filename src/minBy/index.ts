@@ -1,10 +1,14 @@
-function minBy(array: object[] | null, iteratee: (value: object) => unknown) {
+type MINBY = { [key: string]: any } | undefined;
+function minBy(array: MINBY[] | null, key: string) {
   let result;
   if (array == null) {
     return result;
   } else if (array != null && array.length === 0) {
     return result;
   }
+  const iteratee = (value: MINBY) => {
+    return value ? value[key] : undefined;
+  };
   let computed;
   for (const value of array) {
     const current = iteratee(value);
