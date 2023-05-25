@@ -94,3 +94,4 @@ export { default as getRepeatCharacter } from './getRepeatCharacter';
 export { default as calculateMemory } from './calculateMemory';
 
 export { default as designateRepeat } from './designateRepeat';
+export { default as PriorityQueue } from './priorityQueue';
